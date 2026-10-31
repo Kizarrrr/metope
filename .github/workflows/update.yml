@@ -1,0 +1,119 @@
+name: Sync Meta Cache
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'output/**'
+  schedule:
+    - cron: '17 */2 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Принудительное обновление'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-meta-cache
+  cancel-in-progress: false
+
+jobs:
+  cache-sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
+          persist-credentials: false
+
+      - name: Gate
+        id: gate
+        run: |
+          RUN=true
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            LAST=$(git log -1 --format=%ct --grep='^cache-update' || echo 0)
+            LAST=${LAST:-0}
+            AGE_MIN=$(( ( $(date +%s) - LAST ) / 60 ))
+            if [ "$LAST" -gt 0 ] && [ "$AGE_MIN" -lt 30 ]; then
+              RUN=false
+            fi
+          fi
+          echo "run=$RUN" >> "$GITHUB_OUTPUT"
+
+      - name: Set up Python
+        if: steps.gate.outputs.run == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fetch Runner Core
+        if: steps.gate.outputs.run == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          API="https://api.github.com/repos/SaltyMonkey/justclash-core-slim/releases/latest"
+          DOWNLOAD_URL=$(curl -sL --retry 3 -H "Authorization: Bearer $GH_TOKEN" "$API" | grep "browser_download_url.*mihomo-linux-amd64-compatible-v.*\.gz" | head -n 1 | cut -d '"' -f 4)
+          if [ -z "$DOWNLOAD_URL" ]; then
+            DOWNLOAD_URL=$(curl -sL --retry 3 -H "Authorization: Bearer $GH_TOKEN" "$API" | grep "browser_download_url.*mihomo-linux-amd64-.*\.gz" | head -n 1 | cut -d '"' -f 4)
+          fi
+          if [ -z "$DOWNLOAD_URL" ]; then
+            echo "Error: Mihomo URL not found"
+            exit 1
+          fi
+          curl -sL --retry 3 "$DOWNLOAD_URL" -o mihomo.gz
+          gunzip -f mihomo.gz
+          chmod +x mihomo
+          ./mihomo -v
+
+      - name: Process & Verify Endpoints
+        if: steps.gate.outputs.run == 'true'
+        env:
+          FORCE_UPDATE: ${{ github.event.inputs.force }}
+        run: |
+          python checker.py
+          python generate_clash.py
+
+      - name: Validate Output
+        if: steps.gate.outputs.run == 'true'
+        shell: bash
+        run: |
+          python -c "import yaml; yaml.safe_load(open('output/clash.yaml')); yaml.safe_load(open('output/proxies.yaml')); print('YAML valid')"
+          mkdir -p "$RUNNER_TEMP/mihomo-t"
+          ./mihomo -t -d "$RUNNER_TEMP/mihomo-t" -f output/clash.yaml 2>&1 | tee t.log
+          if grep -qE 'level=(error|fatal)' t.log; then
+            echo "Validation error detected in mihomo log"
+            exit 1
+          fi
+
+      - name: Push Data Cache
+        if: steps.gate.outputs.run == 'true'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add output/
+          if git diff --staged --quiet; then
+            echo "No changes."
+          else
+            git commit -m "cache-update: $(TZ=Europe/Moscow date +'%Y-%m-%d %H:%M МСК')"
+            B64_AUTH=$(printf "x-access-token:%s" "$GH_TOKEN" | base64 | tr -d '\n')
+            git -c http.extraheader="AUTHORIZATION: basic $B64_AUTH" pull --rebase origin main
+            git -c http.extraheader="AUTHORIZATION: basic $B64_AUTH" push origin HEAD:main
+          fi

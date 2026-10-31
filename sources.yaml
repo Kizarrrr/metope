@@ -1,0 +1,40 @@
+settings:
+  test_url: "http://www.gstatic.com/generate_204"
+  verify_url: "https://cp.cloudflare.com/generate_204"
+  youtube_url: "https://redirector.googlevideo.com/report_mapping?di=no"
+  telegram_url: "https://web.telegram.org"
+  check_youtube: true
+  check_telegram: true
+  strict_check: true
+  speed_test_url: "https://speed.cloudflare.com/__down?bytes=300000"
+  speed_test_timeout_sec: 8
+  speed_test_workers: 8
+  check_speed: true
+  test_timeout_ms: 3500
+  max_delay_ms: 2000
+  max_concurrent_checks: 80
+  per_country_proto: 8
+  max_per_country: 15
+  max_total: 300
+  max_source_size_mb: 30
+
+sources:
+  - "https://github.com/Killmistr/testname124/blob/main/sub.txt"
+  - "https://raw.githubusercontent.com/hussaroff/lte-universal-checked/main/whitelist.txt"
+  - "https://gitlab.com/igareck/vpn-configs-for-russia/-/raw/main/Export/Clash/PROXIES_ONLY/BLACK_SS%2BAll_RUS_clash_proxies.yaml"
+  - "https://gitlab.com/igareck/vpn-configs-for-russia/-/raw/main/Export/Clash/PROXIES_ONLY/BLACK_VLESS_RUS_clash_proxies.yaml"
+  - "https://gitlab.com/igareck/vpn-configs-for-russia/-/raw/main/Export/Clash/PROXIES_ONLY/BLACK_VLESS_RUS_mobile_clash_proxies.yaml"
+  - "https://gitlab.com/igareck/vpn-configs-for-russia/-/raw/main/Export/Clash/PROXIES_ONLY/WHITE-CIDR-RU-all-clash-proxies.yaml"
+  - "https://gitlab.com/igareck/vpn-configs-for-russia/-/raw/main/Export/Clash/PROXIES_ONLY/WHITE-CIDR-RU-checked-clash-proxies.yaml"
+  - "https://gitlab.com/igareck/vpn-configs-for-russia/-/raw/main/Export/Clash/PROXIES_ONLY/WHITE-SNI-RU-all-clash-proxies.yaml"
+  - "https://gitlab.com/igareck/vpn-configs-for-russia/-/raw/main/Export/Clash/PROXIES_ONLY/Vless-Reality-White-Lists-Rus-Mobile-clash-proxies.yaml"
+  - "https://etoskam.ru/other"
+  - "https://etoskam.ru/whitelist"
+  - "https://etoskam.ru/gemini"
+  - "https://etoskam.ru/ytm"
+  - "https://etoskam.ru/1"
+  - "https://github.com/imnocrew/vpn-configs/blob/master/top200.txt"
+  - "https://github.com/imnocrew/vpn-configs/blob/master/ru.txt"
+  - "https://github.com/imnocrew/vpn-configs/blob/master/top100-vless.txt"
+  - "https://github.com/Argh73/VpnConfigCollector/blob/main/All_Configs_Sub.txt"
+  - "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-all.txt"

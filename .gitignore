@@ -1,0 +1,15 @@
+mihomo
+mihomo.gz
+temp_mihomo_config.yaml
+mihomo.log
+__pycache__/
+*.pyc
+*.tmp
+cache.db
+geoip.metadb
+t.log
+temp_speed_cfg_*.yaml
+venv/
+.venv/
+.DS_Store
+*/.DS_Store
