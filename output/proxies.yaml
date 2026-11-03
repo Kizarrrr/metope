@@ -1,68 +1,140 @@
 # ============================================================
-# Обновлено: 2026-11-03 21:07:52 МСК
-# Собрано: 67371 | Дубликатов: 44779 | Уникальных: 22592
-# Проверено: 15725 | Ответили: 1298 | Отсеяно суммарно: 14427
-#   - не ответили на базовый тест: 13655
-#   - недоступен YouTube: 307
-#   - недоступен Telegram: 104
-#   - недоступен Cloudflare: 361
-# Прошли пинг-фильтр (<=2000ms): 1251 | Отсеяно высокий пинг: 47
-# Отсеяно по низкой скорости (<100 КБ за 8 с): 46
-# Отсеяно по лимитам стран и протоколов: 911
-# Итого рабочих серверов в подписке: 294
-# Пинг: от 15 ms до 1982 ms (средний: 571 ms)
-# Скорость: от 10.3 до 2453.0 КБ/с (средняя: 305.5 КБ/с)
-# Источники: 1-29 2-1 3-2 4-4 10-169 11-3 15-3 18-76 19-7
+# Обновлено: 2026-11-04 02:39:06 МСК
+# Собрано: 67931 | Дубликатов: 45147 | Уникальных: 22784
+# Проверено: 15926 | Ответили: 1689 | Отсеяно суммарно: 14237
+#   - не ответили на базовый тест: 13582
+#   - недоступен YouTube: 235
+#   - недоступен Telegram: 69
+#   - недоступен Cloudflare: 351
+# Прошли пинг-фильтр (<=2000ms): 1653 | Отсеяно высокий пинг: 36
+# Отсеяно по низкой скорости (<100 КБ за 8 с): 28
+# Отсеяно по лимитам стран и протоколов: 1325
+# Итого рабочих серверов в подписке: 300
+# Пинг: от 13 ms до 1526 ms (средний: 418 ms)
+# Скорость: от 72.9 до 2226.6 КБ/с (средняя: 347.5 КБ/с)
+# Источники: 1-35 4-1 6-5 10-148 11-2 15-1 18-105 19-3
 # ============================================================
 
 proxies:
 - name: 🇺🇸 США 01
-  type: hysteria2
-  server: 64.32.13.230
-  port: 443
-  password: 8fa4bea0-8703-11ef-83cc-f23c913c8d2b
-  sni: 402cf505-tly2o0-tn3jhp-1qthu.los.hyhuawei.com
-  client-fingerprint: firefox
+  type: ss
+  server: 95.215.201.18
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   country: US
 - name: 🇺🇸 США 02
-  type: hysteria2
-  server: b774a499-tmm5c0-tphvvu-gacy.los.hyhuawei.com
+  type: trojan
+  server: 66.163.112.13
   port: 443
-  password: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: api.nextjobopportunityandclaimyouridealrole.com
+  skip-cert-verify: true
   client-fingerprint: firefox
+  network: tcp
   country: US
 - name: 🇺🇸 США 03
-  type: hysteria2
-  server: 64.32.13.230
+  type: trojan
+  server: 66.163.112.76
   port: 443
-  password: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
-  sni: 9df552ab-tmkao0-u1vxv2-v3c2.los.hyhuawei.com
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: 66.163.112.76
+  skip-cert-verify: true
   client-fingerprint: firefox
+  network: tcp
   country: US
 - name: 🇺🇸 США 04
+  type: trojan
+  server: 66.163.112.242
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: api.nextjobopportunityandclaimyouridealrole.com
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: tcp
+  country: US
+- name: 🇺🇸 США 05
+  type: trojan
+  server: 66.163.112.13
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: 66.163.112.13
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: tcp
+  country: US
+- name: 🇺🇸 США 06
+  type: trojan
+  server: 66.163.112.242
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: resources.unlockyourfuturefindyourperfectcareer.com
+  client-fingerprint: firefox
+  network: tcp
+  country: US
+- name: 🇺🇸 США 07
+  type: trojan
+  server: 66.163.112.242
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: 66.163.112.242
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: tcp
+  country: US
+- name: 🇺🇸 США 08
+  type: trojan
+  server: 66.163.112.121
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: 66.163.112.121
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: tcp
+  country: US
+- name: 🇺🇸 США 09
+  type: trojan
+  server: 66.163.112.142
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: cdn.unlockyourfuturefindyourperfectcareer.com
+  client-fingerprint: firefox
+  network: tcp
+  country: US
+- name: 🇺🇸 США 10
   type: hysteria2
   server: 64.32.13.230
   port: 443
-  password: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
-  sni: 1ba94b4c-tmm5c0-tw661e-1isea.los.hyhuawei.com
+  password: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
+  sni: 5e9b967f-tmm5c0-u4ai7k-z7a1.los.hyhuawei.com
   client-fingerprint: firefox
   country: US
-- name: 🇺🇸 США 05
+- name: 🇺🇸 США 11
   type: hysteria2
-  server: a436bbe7-tmm5c0-tug19l-1go3q.los.hyhuawei.com
+  server: 64.32.13.230
   port: 443
-  password: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d
-  sni: a436bbe7-tmm5c0-tug19l-1go3q.los.hyhuawei.com
+  password: f860f2da-5035-11ed-bb74-f23c9164ca5d
+  sni: 36cbcc3d-tmm5c0-tnt75r-1k8ga.los.hyhuawei.com
   client-fingerprint: firefox
   country: US
-- name: 🇺🇸 США 06
+- name: 🇺🇸 США 12
   type: hysteria2
-  server: 01505e69-tmm5c0-tu0ezx-1m7l4.los.hyhuawei.com
+  server: 64.32.13.230
   port: 443
-  password: bd515574-3b10-11ee-ac14-f23c9164ca5d
+  password: 94d40708-8273-11ea-8fc9-f23c913c8d2b
+  sni: db09351f-tlsio0-0-mv7m.los.hyhuawei.com
   client-fingerprint: firefox
   country: US
-- name: 🇺🇸 США 07
+- name: 🇺🇸 США 13
   type: hysteria2
   server: 64.32.13.230
   port: 443
@@ -70,102 +142,36 @@ proxies:
   sni: d84e799d-tm96o0-0-1rnrp.los.hyhuawei.com
   client-fingerprint: firefox
   country: US
-- name: 🇺🇸 США 08
-  type: hysteria2
-  server: b2535a8d-tmm5c0-twjnjx-1q9g2.los.hyhuawei.com
-  port: 443
-  password: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
-  client-fingerprint: firefox
-  country: US
-- name: 🇺🇸 США 09
-  type: vless
-  server: 43.153.121.144
-  port: 443
-  uuid: df63ee5d-9530-464d-bb1c-ca1fa00e8b98
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: -6_eN_0VKwqVaYN_jU9WdQ9yEpiLGvJQffhGThYLqGQ
-    short-id: c2f1c482d8d339a5
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: US
-- name: 🇺🇸 США 10
-  type: vless
-  server: 67.209.184.133
-  port: 443
-  uuid: 96ebc166-565c-474f-9712-7990b55c368a
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.bing.com
-  reality-opts:
-    public-key: Tp015Ga5LodBwKs4z7Wz4hTvqeh8-4q1EQPZqvZfWR0
-    short-id: ad09494d431b2b92
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  country: US
-- name: 🇺🇸 США 11
-  type: vmess
-  server: 23.150.152.65
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: tcp
-  servername: xmfhlpy.com
-  country: US
-  client-fingerprint: firefox
-- name: 🇺🇸 США 12
-  type: vmess
-  server: rib9jxayoqjgn2kw.v.3dns.vip
-  port: 443
-  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-  country: US
-  client-fingerprint: firefox
-- name: 🇺🇸 США 13
-  type: vless
-  server: 47.251.25.74
-  port: 443
-  uuid: 18805ff3-b420-45de-af18-93be14024ae8
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.amazon.com
-  reality-opts:
-    public-key: H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  country: US
 - name: 🇺🇸 США 14
-  type: ss
-  server: 107.172.219.230
-  port: 2096
-  udp: true
-  cipher: chacha20-ietf-poly1305
-  password: 456c497e-02bc-4b46-883f-06747cabdfbd
+  type: hysteria2
+  server: 64.32.13.230
+  port: 443
+  password: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  sni: b774a499-tmm5c0-tphvvu-gacy.los.hyhuawei.com
+  client-fingerprint: firefox
   country: US
 - name: 🇺🇸 США 15
-  type: trojan
-  server: 167.88.61.198
+  type: hysteria2
+  server: 64.32.13.230
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: cdn.browseseniorrolesandenhanceyourcareertoday.com
-  client-fingerprint: chrome
-  network: tcp
+  password: 8fa4bea0-8703-11ef-83cc-f23c913c8d2b
+  sni: 0b28dbb8-tmm5c0-tn3jhp-1qthu.los.hyhuawei.com
+  client-fingerprint: firefox
   country: US
+- name: 🇭🇰 Гонконг 01
+  type: vless
+  server: 182.16.62.14
+  port: 443
+  uuid: 5bfa133a-76d4-425c-b8d4-72cd2ff18198
+  udp: true
+  tls: true
+  network: tcp
+  servername: cloudflare.com
+  reality-opts:
+    public-key: npOtPP-gIOAg3Ltra8XJpvpIm3l4FtDKxqrUtSrPOT0
+    short-id: f76d89d0
+  client-fingerprint: chrome
+  country: HK
 - name: 🇨🇦 Канада 01
   type: ss
   server: 149.22.95.183
@@ -174,125 +180,96 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
   country: CA
-- name: 🇸🇪 Швеция 01
-  type: hysteria2
-  server: promo.betust.net
-  port: 443
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  sni: promo.betust.net
-  client-fingerprint: firefox
-  country: SE
-- name: 🇸🇪 Швеция 02
-  type: hysteria2
-  server: 50.7.38.243
-  port: 443
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  sni: promo.betust.net
-  client-fingerprint: firefox
-  country: SE
-- name: 🇪🇪 Эстония 01
-  type: hysteria2
-  server: 141.0.187.15
-  port: 443
-  password: 70043bfa-d6fb-4980-b27e-773e9e8b2004
-  sni: crt.onecloudstream.com
-  client-fingerprint: firefox
-  country: EE
-- name: 🇬🇧 Великобритания 01
-  type: hysteria2
-  server: 50.7.193.146
-  port: 443
-  password: 2bc6428196efb899f544d750bea0c06d
-  sni: promo2.betust.net
-  client-fingerprint: firefox
-  country: GB
-- name: 🇩🇪 Германия 01
-  type: hysteria2
-  server: derfderf.ru
-  port: 12824
-  password: d62s7ghfehm742us
-  client-fingerprint: firefox
-  country: DE
-- name: 🇩🇪 Германия 02
-  type: hysteria2
-  server: 151.243.169.164
-  port: 12824
-  password: d62s7ghfehm742us
-  sni: derfderf.ru
-  client-fingerprint: firefox
-  country: DE
-- name: 🇫🇷 Франция 01
-  type: hysteria2
-  server: 62.210.7.139
-  port: 60111
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.bing.com
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: FR
+- name: 🇨🇦 Канада 02
+  type: ss
+  server: 158.51.121.221
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: CA
 - name: 🇳🇱 Нидерланды 01
-  type: hysteria2
-  server: 130.49.161.70
+  type: vless
+  server: 79.141.164.83
   port: 443
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  uuid: 906b3770-3d8b-45c7-a46d-df6b49a6d6aa
+  udp: true
+  tls: true
+  network: grpc
+  servername: nlb.kosmosapp.net
+  reality-opts:
+    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+    short-id: 27350908de933e09
   client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: neurex
   country: NL
-- name: 🇸🇪 Швеция 03
-  type: hysteria2
-  server: promo.betust.net
+- name: 🇨🇦 Канада 03
+  type: vmess
+  server: cf.877771.xyz
   port: 443
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  skip-cert-verify: true
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  servername: vmess.lbw666.dpdns.org
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+  country: CA
   client-fingerprint: firefox
-  country: SE
 - name: 🇳🇱 Нидерланды 02
-  type: hysteria2
-  server: hy2.aspidnet.xyz
+  type: vless
+  server: 5.149.249.94
   port: 443
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  uuid: ed77c1dc-3df2-412b-b855-49286f979c21
+  udp: true
+  tls: true
+  network: grpc
+  servername: nlb.kosmosapp.net
+  reality-opts:
+    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+    short-id: 27350908de933e09
   client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: neurex
   country: NL
-- name: 🇩🇪 Германия 03
-  type: hysteria2
-  server: 88.99.213.222
-  port: 14444
-  password: mhsl
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: DE
 - name: 🇳🇱 Нидерланды 03
-  type: hysteria2
-  server: hy2.aspidnet.xyz
+  type: vless
+  server: 79.141.164.83
   port: 443
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  uuid: 96c12f5b-a591-4e67-8ab7-7928ab826f88
+  udp: true
+  tls: true
+  network: grpc
+  servername: nlb.kosmosapp.net
+  reality-opts:
+    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+    short-id: 27350908de933e09
   client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: neurex
   country: NL
-- name: 🇫🇷 Франция 02
-  type: hysteria2
-  server: 62.210.7.139
-  port: 60111
-  password: github.com/Alvin9999-newpac/fanqiang
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: FR
-- name: 🇫🇷 Франция 03
-  type: hysteria2
-  server: 62.210.147.2
-  port: 43115
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: FR
-- name: 🇫🇷 Франция 04
+- name: 🇳🇱 Нидерланды 04
+  type: vless
+  server: 79.141.164.83
+  port: 443
+  uuid: 0760406c-3f19-47b1-b332-f59270adf431
+  udp: true
+  tls: true
+  network: grpc
+  servername: nlb.kosmosapp.net
+  reality-opts:
+    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+    short-id: 27350908de933e09
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: neurex
+  country: NL
+- name: 🇫🇷 Франция 01
   type: hysteria2
   server: 62.210.7.139
   port: 60111
@@ -301,21 +278,243 @@ proxies:
   skip-cert-verify: true
   client-fingerprint: firefox
   country: FR
-- name: 🇬🇧 Великобритания 02
-  type: hysteria2
-  server: promo2.betust.net
+- name: 🇳🇱 Нидерланды 05
+  type: vless
+  server: 79.141.164.81
   port: 443
-  password: 2bc6428196efb899f544d750bea0c06d
-  sni: promo2.betust.net
-  client-fingerprint: firefox
-  country: GB
-- name: 🇩🇪 Германия 04
-  type: hysteria2
-  server: steel7.hadsvpn.com
+  uuid: 910bd15d-b69c-48d9-8251-cfbbd6546a7c
+  udp: true
+  tls: true
+  network: grpc
+  servername: nla.kosmosapp.net
+  reality-opts:
+    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+    short-id: 27350908de933e09
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: neurex
+  country: NL
+- name: 🇳🇱 Нидерланды 06
+  type: vless
+  server: 5.149.249.94
   port: 443
-  password: 23c82941-70f4-4381-90db-bd28e9a902e9
+  uuid: ed77c1dc-3df2-412b-b855-49286f979c21
+  udp: true
+  tls: true
+  network: grpc
+  servername: nlb.kosmosapp.net
+  reality-opts:
+    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+    short-id: 27350908de933e09
+    spider-x: /?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: neurex
+  country: NL
+- name: 🇳🇱 Нидерланды 07
+  type: vless
+  server: 5.149.249.94
+  port: 443
+  uuid: f038bdac-d9f7-47b5-a376-47ebc71c950a
+  udp: true
+  tls: true
+  network: grpc
+  servername: nlb.kosmosapp.net
+  reality-opts:
+    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+    short-id: 27350908de933e09
   client-fingerprint: firefox
-  country: DE
+  grpc-opts:
+    grpc-service-name: neurex
+  country: NL
+- name: 🇳🇱 Нидерланды 08
+  type: vless
+  server: 79.141.164.83
+  port: 443
+  uuid: f0491d55-8e96-47a0-bf46-c028bcd24f48
+  udp: true
+  tls: true
+  network: grpc
+  servername: nlb.kosmosapp.net
+  reality-opts:
+    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+    short-id: 27350908de933e09
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: neurex
+  country: NL
+- name: 🇨🇦 Канада 04
+  type: vmess
+  server: 104.21.7.133
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  servername: vmess.lbw666.dpdns.org
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+  country: CA
+  client-fingerprint: firefox
+- name: 🇪🇪 Эстония 01
+  type: hysteria2
+  server: 141.0.187.15
+  port: 443
+  password: 70043bfa-d6fb-4980-b27e-773e9e8b2004
+  sni: crt.onecloudstream.com
+  client-fingerprint: firefox
+  country: EE
+- name: 🇨🇦 Канада 05
+  type: vmess
+  server: cf.0sm.com
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  servername: vmess.lbw666.dpdns.org
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+  country: CA
+  client-fingerprint: firefox
+- name: 🇨🇦 Канада 06
+  type: vmess
+  server: 104.17.136.198
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  servername: vmess.lbw666.dpdns.org
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+  country: CA
+  client-fingerprint: firefox
+- name: 🇨🇦 Канада 07
+  type: vmess
+  server: cf.090227.xyz
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  servername: vmess.lbw666.dpdns.org
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+  country: CA
+  client-fingerprint: firefox
+- name: 🇨🇦 Канада 08
+  type: trojan
+  server: 216.152.147.93
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: connectingpeoplewithgreatjobs.com
+  client-fingerprint: chrome
+  network: tcp
+  country: CA
+- name: 🇫🇷 Франция 02
+  type: hysteria2
+  server: 62.210.7.139
+  port: 60111
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: …
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: FR
+- name: 🇫🇷 Франция 03
+  type: hysteria2
+  server: 62.210.7.139
+  port: 60111
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: FR
+- name: 🇨🇦 Канада 09
+  type: trojan
+  server: 216.152.147.201
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: resources.connectingpeoplewithgreatjobs.com
+  client-fingerprint: firefox
+  network: tcp
+  country: CA
+- name: 🇫🇷 Франция 04
+  type: hysteria2
+  server: 62.210.7.139
+  port: 60111
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: www.bing.com
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: FR
+- name: 🇨🇦 Канада 10
+  type: trojan
+  server: 216.152.147.89
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: www.connectingpeoplewithgreatjobs.com
+  client-fingerprint: firefox
+  network: tcp
+  country: CA
+- name: 🇨🇦 Канада 11
+  type: trojan
+  server: 216.152.147.152
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: learn.connectingpeoplewithgreatjobs.com
+  client-fingerprint: chrome
+  network: tcp
+  country: CA
+- name: 🇨🇦 Канада 12
+  type: trojan
+  server: 216.152.147.85
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: cdn.connectingpeoplewithgreatjobs.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: tcp
+  country: CA
+- name: 🇳🇱 Нидерланды 09
+  type: hysteria2
+  server: 45.91.237.78
+  port: 443
+  password: f4b80b26-b6d4-49a6-a460-f50efb7a457c
+  sni: node.aweom.su
+  client-fingerprint: firefox
+  country: NL
+- name: 🇨🇦 Канада 13
+  type: trojan
+  server: 216.152.147.48
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: courses.connectingpeoplewithgreatjobs.com
+  client-fingerprint: firefox
+  network: tcp
+  country: CA
 - name: 🇫🇷 Франция 05
   type: hysteria2
   server: 62.210.7.139
@@ -330,19 +529,233 @@ proxies:
   server: 62.210.7.139
   port: 60111
   password: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
+  sni: css.rbxcdn.com
   skip-cert-verify: true
   client-fingerprint: firefox
   country: FR
-- name: 🇳🇱 Нидерланды 04
+- name: 🇫🇷 Франция 07
   type: hysteria2
-  server: 45.91.237.78
-  port: 443
-  password: f4b80b26-b6d4-49a6-a460-f50efb7a457c
-  sni: node.aweom.su
+  server: 62.210.147.2
+  port: 43115
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: www.microsoft.com
+  skip-cert-verify: true
   client-fingerprint: firefox
+  country: FR
+- name: 🇨🇦 Канада 14
+  type: trojan
+  server: 216.152.147.79
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: blog.connectingpeoplewithgreatjobs.com
+  client-fingerprint: firefox
+  network: tcp
+  country: CA
+- name: 🇫🇷 Франция 08
+  type: hysteria2
+  server: 62.210.7.139
+  port: 60111
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: 62.210.7.139
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: FR
+- name: 🇸🇪 Швеция 01
+  type: hysteria2
+  server: 50.7.38.243
+  port: 443
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: promo.betust.net
+  client-fingerprint: firefox
+  country: SE
+- name: 🇨🇦 Канада 15
+  type: vmess
+  server: 172.64.229.21
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  servername: vmess.lbw666.dpdns.org
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+  country: CA
+  client-fingerprint: firefox
+- name: 🇬🇧 Великобритания 01
+  type: hysteria2
+  server: 50.7.193.146
+  port: 443
+  password: 2bc6428196efb899f544d750bea0c06d
+  sni: promo2.betust.net
+  client-fingerprint: firefox
+  country: GB
+- name: 🇩🇪 Германия 01
+  type: hysteria2
+  server: steel7.hadsvpn.com
+  port: 443
+  password: 23c82941-70f4-4381-90db-bd28e9a902e9
+  client-fingerprint: firefox
+  country: DE
+- name: 🇸🇪 Швеция 02
+  type: hysteria2
+  server: promo.betust.net
+  port: 443
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: promo.betust.net
+  client-fingerprint: firefox
+  country: SE
+- name: 🇩🇪 Германия 02
+  type: hysteria2
+  server: 153.52.85.32
+  port: 443
+  password: 23c82941-70f4-4381-90db-bd28e9a902e9
+  sni: steel7.hadsvpn.com
+  client-fingerprint: firefox
+  country: DE
+- name: 🇩🇪 Германия 03
+  type: hysteria2
+  server: 151.243.169.164
+  port: 12824
+  password: d62s7ghfehm742us
+  sni: derfderf.ru
+  client-fingerprint: firefox
+  country: DE
+- name: 🇩🇪 Германия 04
+  type: hysteria2
+  server: 179.61.138.145
+  port: 36264
+  password: VPNJEY
+  sni: de2.jey.cc.cd
+  obfs: salamander
+  obfs-password: Telegram@vpnjey
+  client-fingerprint: firefox
+  country: DE
+- name: 🇩🇪 Германия 05
+  type: vless
+  server: 5406e6g.de27.h1clayd.click
+  port: 443
+  uuid: 3ceda178-78fe-4695-a1ef-a591ae7a2c97
+  udp: true
+  tls: true
+  network: grpc
+  servername: 5406e6g.de27.h1clayd.click
+  reality-opts:
+    public-key: AN1ASOcjxq1GWkCMBFT_yBRPkCbDr8i58S7o_CzMQmI
+    short-id: 8ddf8704a2cdcbc7
+    spider-x: /
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: 97fb546ddb99
+  country: DE
+- name: 🇩🇪 Германия 06
+  type: hysteria2
+  server: 88.99.213.222
+  port: 14444
+  password: mhsl
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: DE
+- name: 🇩🇪 Германия 07
+  type: hysteria2
+  server: derfderf.ru
+  port: 12824
+  password: d62s7ghfehm742us
+  client-fingerprint: firefox
+  country: DE
+- name: 🇳🇱 Нидерланды 10
+  type: ss
+  server: dns27.m3hrzd.ir
+  port: 8044
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
   country: NL
+- name: 🇩🇪 Германия 08
+  type: hysteria2
+  server: 95.85.252.217
+  port: 8443
+  password: 2f0fccb6-4a86-4d9f-9e03-a2dfee6ed7f5
+  sni: speedtestmark.com
+  client-fingerprint: firefox
+  country: DE
+- name: 🇳🇱 Нидерланды 11
+  type: ss
+  server: 185.4.115.147
+  port: 8044
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
+  country: NL
+- name: 🇬🇧 Великобритания 02
+  type: hysteria2
+  server: promo2.betust.net
+  port: 443
+  password: 2bc6428196efb899f544d750bea0c06d
+  sni: promo2.betust.net
+  client-fingerprint: firefox
+  country: GB
 - name: 🇬🇧 Великобритания 03
+  type: ss
+  server: 142.202.51.22
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: GB
+- name: 🇬🇧 Великобритания 04
+  type: ss
+  server: 38.114.120.221
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: GB
+- name: 🇩🇪 Германия 09
+  type: hysteria2
+  server: 45.88.12.119
+  port: 443
+  password: 80cbaaec-caff-4181-8539-ea6e51731007
+  sni: crt.onecloudstream.com
+  client-fingerprint: firefox
+  country: DE
+- name: 🇳🇱 Нидерланды 12
+  type: ss
+  server: 151.241.19.36
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: NL
+- name: 🇩🇪 Германия 10
+  type: ss
+  server: 193.108.116.98
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: DE
+- name: 🇸🇪 Швеция 03
+  type: hysteria2
+  server: promo.betust.net
+  port: 443
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: SE
+- name: 🇩🇪 Германия 11
+  type: ss
+  server: 193.108.119.2
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: DE
+- name: 🇬🇧 Великобритания 05
   type: ss
   server: 185.176.206.9
   port: 19999
@@ -350,38 +763,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   country: GB
-- name: 🇳🇱 Нидерланды 05
-  type: vless
-  server: 79.141.164.125
-  port: 443
-  uuid: 52a7c001-4c6f-4ae5-8098-01991dfb7ff6
-  udp: true
-  tls: true
-  network: grpc
-  servername: nla.kosmosapp.net
-  reality-opts:
-    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
-    short-id: 27350908de933e09
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: neurex
-  country: NL
-- name: 🇳🇱 Нидерланды 06
-  type: vless
-  server: 79.141.164.81
-  port: 443
-  uuid: de7db915-4153-49d6-b036-51a8f7ced723
-  udp: true
-  tls: true
-  network: grpc
-  servername: nla.kosmosapp.net
-  reality-opts:
-    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
-    short-id: 27350908de933e09
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: neurex
-  country: NL
 - name: 🇲🇽 Мексика 01
   type: trojan
   server: 216.238.80.100
@@ -392,90 +773,15 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   country: MX
-- name: 🇩🇪 Германия 05
-  type: hysteria2
-  server: 5.45.100.100
-  port: 51511
-  password: miaoge110
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: DE
-- name: 🇩🇪 Германия 06
-  type: hysteria2
-  server: steel7.hadsvpn.com
-  port: 443
-  password: 23c82941-70f4-4381-90db-bd28e9a902e9
-  sni: steel7.hadsvpn.com
-  client-fingerprint: firefox
-  country: DE
-- name: 🇫🇷 Франция 07
-  type: hysteria2
-  server: 62.210.7.139
-  port: 60111
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: FR
-- name: 🇫🇷 Франция 08
-  type: hysteria2
-  server: 173.212.201.85
-  port: 443
-  password: gf1:gfhysteria2024
-  sni: www.docker.com
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: FR
-- name: 🇳🇱 Нидерланды 07
-  type: vless
-  server: 79.141.164.81
-  port: 443
-  uuid: 87b082bd-76c7-42e9-b66a-746899ac567e
-  udp: true
-  tls: true
-  network: grpc
-  servername: nla.kosmosapp.net
-  reality-opts:
-    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
-    short-id: 27350908de933e09
-    spider-x: /?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: neurex
-  country: NL
-- name: 🇩🇪 Германия 07
-  type: hysteria2
-  server: 95.85.252.217
-  port: 8443
-  password: 2f0fccb6-4a86-4d9f-9e03-a2dfee6ed7f5
-  sni: speedtestmark.com
-  client-fingerprint: firefox
-  country: DE
-- name: 🇧🇾 Беларусь 01
-  type: hysteria2
-  server: 13.143.188.142
-  port: 4444
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: bl1.nexfile.net
-  client-fingerprint: firefox
-  country: BY
-- name: 🇵🇱 Польша 01
-  type: hysteria2
-  server: 13.143.189.106
-  port: 4444
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: pl2.nexfile.net
-  client-fingerprint: firefox
-  country: PL
-- name: 🇬🇧 Великобритания 04
+- name: 🇳🇱 Нидерланды 13
   type: ss
-  server: 141.98.101.181
-  port: 443
+  server: 193.29.139.235
+  port: 8080
   udp: true
-  cipher: aes-128-gcm
-  password: shadowsocks
-  country: GB
-- name: 🇩🇪 Германия 08
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  country: NL
+- name: 🇩🇪 Германия 12
   type: ss
   server: 185.176.204.18
   port: 19999
@@ -483,103 +789,25 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   country: DE
-- name: 🇵🇱 Польша 02
+- name: 🇳🇱 Нидерланды 14
+  type: ss
+  server: 151.241.19.29
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: NL
+- name: 🇳🇱 Нидерланды 15
   type: hysteria2
-  server: 13.143.189.96
-  port: 4444
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: pl3.nexfile.net
-  client-fingerprint: firefox
-  country: PL
-- name: 🇵🇱 Польша 03
-  type: hysteria2
-  server: pl3.nexfile.net
-  port: 4444
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: pl3.nexfile.net
-  client-fingerprint: firefox
-  country: PL
-- name: 🇳🇱 Нидерланды 08
-  type: vless
-  server: 79.141.164.81
+  server: 130.49.161.70
   port: 443
-  uuid: 87b082bd-76c7-42e9-b66a-746899ac567e
-  udp: true
-  tls: true
-  network: grpc
-  servername: nla.kosmosapp.net
-  reality-opts:
-    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
-    short-id: 27350908de933e09
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
   client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: neurex
   country: NL
-- name: 🇵🇱 Польша 04
-  type: hysteria2
-  server: 13.143.189.147
-  port: 4444
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: pl2.nexfile.net
-  client-fingerprint: firefox
-  country: PL
-- name: 🇳🇱 Нидерланды 09
-  type: ss
-  server: 82.38.31.47
-  port: 8080
-  udp: true
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  country: NL
-- name: 🇳🇱 Нидерланды 10
-  type: ss
-  server: 82.38.31.216
-  port: 8080
-  udp: true
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  country: NL
-- name: 🇵🇱 Польша 05
-  type: hysteria2
-  server: 13.143.189.143
-  port: 4444
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: pl3.nexfile.net
-  client-fingerprint: firefox
-  country: PL
-- name: 🇳🇱 Нидерланды 11
-  type: ss
-  server: 82.38.31.159
-  port: 443
-  udp: true
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  country: NL
-- name: 🇵🇱 Польша 06
-  type: hysteria2
-  server: 13.143.189.144
-  port: 4444
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: pl2.nexfile.net
-  client-fingerprint: firefox
-  country: PL
-- name: 🇳🇱 Нидерланды 12
-  type: ss
-  server: 82.38.31.39
-  port: 8080
-  udp: true
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  country: NL
-- name: 🇵🇱 Польша 07
-  type: hysteria2
-  server: 13.143.189.71
-  port: 4444
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: pl3.nexfile.net
-  client-fingerprint: firefox
-  country: PL
-- name: 🇧🇾 Беларусь 02
+- name: 🇧🇾 Беларусь 01
   type: hysteria2
   server: 13.143.188.143
   port: 4444
@@ -587,79 +815,23 @@ proxies:
   sni: bl1.nexfile.net
   client-fingerprint: firefox
   country: BY
-- name: 🇳🇱 Нидерланды 13
+- name: 🇫🇷 Франция 09
   type: ss
-  server: 178.83.185.156
-  port: 8080
+  server: 167.17.64.22
+  port: 19999
   udp: true
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  country: NL
-- name: 🇳🇱 Нидерланды 14
-  type: ss
-  server: 82.38.31.165
-  port: 443
-  udp: true
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  country: NL
-- name: 🇳🇱 Нидерланды 15
-  type: ss
-  server: 82.38.31.186
-  port: 8080
-  udp: true
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  country: NL
-- name: 🇵🇱 Польша 08
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: FR
+- name: 🇵🇱 Польша 01
   type: hysteria2
-  server: 13.143.189.80
+  server: 13.143.189.105
   port: 4444
   password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: pl3.nexfile.net
+  sni: pl2.nexfile.net
   client-fingerprint: firefox
   country: PL
-- name: 🇧🇾 Беларусь 03
-  type: hysteria2
-  server: bl1.nexfile.net
-  port: 4444
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: bl1.nexfile.net
-  alpn:
-  - h3
-  client-fingerprint: firefox
-  country: BY
-- name: 🇩🇪 Германия 09
-  type: hysteria2
-  server: derfderf.ru
-  port: 12824
-  password: d62s7ghfehm742us
-  sni: derfderf.ru
-  client-fingerprint: firefox
-  country: DE
 - name: 🇨🇭 Швейцария 01
-  type: hysteria2
-  server: 140.238.213.114
-  port: 50160
-  password: 84a506ca5aca505696a454d828420b3f
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: CH
-- name: 🇨🇦 Канада 02
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-    short-id: 83f8317a948bb769
-  client-fingerprint: firefox
-  country: CA
-- name: 🇨🇭 Швейцария 02
   type: hysteria2
   server: 140.238.213.114
   port: 50160
@@ -668,13 +840,85 @@ proxies:
   skip-cert-verify: true
   client-fingerprint: firefox
   country: CH
-- name: 🇧🇾 Беларусь 04
+- name: 🇨🇭 Швейцария 02
+  type: hysteria2
+  server: 140.238.213.114
+  port: 50160
+  password: 84a506ca5aca505696a454d828420b3f
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: CH
+- name: 🇵🇱 Польша 02
+  type: hysteria2
+  server: 13.143.189.106
+  port: 4444
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: pl2.nexfile.net
+  client-fingerprint: firefox
+  country: PL
+- name: 🇧🇾 Беларусь 02
   type: hysteria2
   server: bl1.nexfile.net
   port: 4444
   password: a35c508f-4d5d-4531-842e-6e9d43c762c0
   client-fingerprint: firefox
   country: BY
+- name: 🇵🇱 Польша 03
+  type: hysteria2
+  server: 13.143.189.146
+  port: 4444
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: pl3.nexfile.net
+  client-fingerprint: firefox
+  country: PL
+- name: 🇵🇱 Польша 04
+  type: hysteria2
+  server: 13.143.189.147
+  port: 4444
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: pl2.nexfile.net
+  client-fingerprint: firefox
+  country: PL
+- name: 🇵🇱 Польша 05
+  type: hysteria2
+  server: 13.143.189.143
+  port: 4444
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: pl3.nexfile.net
+  client-fingerprint: firefox
+  country: PL
+- name: 🇵🇱 Польша 06
+  type: hysteria2
+  server: 13.143.189.71
+  port: 4444
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: pl3.nexfile.net
+  client-fingerprint: firefox
+  country: PL
+- name: 🇩🇪 Германия 13
+  type: ss
+  server: 193.108.119.83
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: DE
+- name: 🇧🇾 Беларусь 03
+  type: hysteria2
+  server: 13.143.188.142
+  port: 4444
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: bl1.nexfile.net
+  client-fingerprint: firefox
+  country: BY
+- name: 🇵🇱 Польша 07
+  type: hysteria2
+  server: 13.143.189.149
+  port: 4444
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: pl2.nexfile.net
+  client-fingerprint: firefox
+  country: PL
 - name: 🇩🇰 Дания 01
   type: vless
   server: 193.233.253.180
@@ -690,22 +934,214 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
   country: DK
-- name: 🇩🇪 Германия 10
+- name: 🇵🇱 Польша 08
+  type: hysteria2
+  server: 13.143.189.101
+  port: 4444
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: pl1.nexfile.net
+  client-fingerprint: firefox
+  country: PL
+- name: 🇫🇷 Франция 10
   type: vless
-  server: 213.165.56.76
-  port: 2083
-  uuid: 13bf9403-22d1-4221-939b-f6606c423139
+  server: 152.228.139.33
+  port: 35108
+  uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
   udp: true
   tls: true
   network: grpc
-  servername: vk.com
+  servername: www.nvidia.com
   reality-opts:
-    public-key: NWNI1krUm5rhcIRnP3KVvatf9hNKu_H-93bPUdw4cxw
-    short-id: 0ad9fd399087e404
+    public-key: X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg
+    short-id: 52add08b86a5ccea
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-common3
+  country: FR
+- name: 🇩🇪 Германия 14
+  type: ss
+  server: 193.108.118.247
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: DE
+- name: 🇩🇪 Германия 15
+  type: ss
+  server: 193.108.119.3
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: DE
+- name: 🇫🇷 Франция 11
+  type: ss
+  server: 38.109.228.110
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: FR
+- name: 🇫🇷 Франция 12
+  type: ss
+  server: 167.17.64.175
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: FR
+- name: 🇫🇷 Франция 13
+  type: vless
+  server: 152.228.139.33
+  port: 51671
+  uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
+  udp: true
+  tls: true
+  network: grpc
+  servername: www.sony.com
+  reality-opts:
+    public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
+    short-id: 2fed44d8c59f7e71
   client-fingerprint: firefox
   grpc-opts:
-    grpc-service-name: tjwvrf1q9d0n
-  country: DE
+    grpc-service-name: grpc_common3
+  country: FR
+- name: 🇫🇷 Франция 14
+  type: ss
+  server: 167.17.64.27
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: FR
+- name: 🇬🇧 Великобритания 06
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  udp: true
+  cipher: aes-128-gcm
+  password: shadowsocks
+  country: GB
+- name: 🇫🇷 Франция 15
+  type: ss
+  server: 172.99.189.142
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: FR
+- name: 🇧🇾 Беларусь 04
+  type: hysteria2
+  server: bl1.nexfile.net
+  port: 4444
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: bl1.nexfile.net
+  client-fingerprint: firefox
+  country: BY
+- name: 🇨🇭 Швейцария 03
+  type: ss
+  server: 186.190.215.251
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: CH
+- name: 🇨🇭 Швейцария 04
+  type: ss
+  server: 23.166.88.127
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: CH
+- name: 🇨🇭 Швейцария 05
+  type: ss
+  server: 79.127.184.104
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: CH
+- name: 🇦🇹 Австрия
+  type: ss
+  server: 152.53.1.57
+  port: 8388
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
+  country: AT
+- name: 🇬🇧 Великобритания 07
+  type: ss
+  server: 198.244.201.129
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: GB
+- name: 🇨🇭 Швейцария 06
+  type: ss
+  server: 23.166.88.189
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: CH
+- name: 🇬🇧 Великобритания 08
+  type: ss
+  server: 198.244.202.215
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: GB
+- name: 🇮🇹 Италия 01
+  type: ss
+  server: 185.164.175.81
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: IT
+- name: 🇮🇹 Италия 02
+  type: ss
+  server: 202.50.253.27
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: IT
+- name: 🇮🇹 Италия 03
+  type: ss
+  server: 202.50.253.63
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: IT
+- name: 🇳🇴 Норвегия
+  type: ss
+  server: 185.213.23.63
+  port: 990
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  country: 'NO'
+- name: 🇮🇹 Италия 04
+  type: ss
+  server: 202.50.253.72
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: IT
+- name: 🇮🇹 Италия 05
+  type: ss
+  server: 202.50.253.45
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: IT
 - name: 🇯🇵 Япония 01
   type: tuic
   server: de0bc027-teisg0-thtg7i-1lkt0.jp5.hyhuawei.com
@@ -720,6 +1156,14 @@ proxies:
   udp: true
   country: JP
   client-fingerprint: firefox
+- name: 🇫🇮 Финляндия 01
+  type: hysteria2
+  server: 144.31.109.240
+  port: 4444
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: fl3.nexfile.net
+  client-fingerprint: firefox
+  country: FI
 - name: 🇯🇵 Япония 02
   type: tuic
   server: 104.105.139.38
@@ -735,7 +1179,70 @@ proxies:
   sni: de0bc027-teisg0-thtg7i-1lkt0.jp5.hyhuawei.com
   country: JP
   client-fingerprint: firefox
-- name: 🇫🇮 Финляндия 01
+- name: 🇯🇵 Япония 03
+  type: tuic
+  server: de0bc027-teisg0-thtg7i-1lkt0.jp5.hyhuawei.com
+  port: 443
+  uuid: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
+  password: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
+  congestion-controller: bbr
+  alpn:
+  - h3
+  udp-relay-mode: native
+  reduce-rtt: true
+  udp: true
+  sni: de0bc027-teisg0-thtg7i-1lkt0.jp5.hyhuawei.com
+  country: JP
+  client-fingerprint: firefox
+- name: 🇸🇪 Швеция 04
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: SE
+- name: 🇪🇸 Испания 01
+  type: ss
+  server: 167.17.71.167
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: ES
+- name: 🇬🇧 Великобритания 09
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: GB
+- name: 🇬🇧 Великобритания 10
+  type: hysteria2
+  server: 92.242.165.40
+  port: 8443
+  password: 2f0fccb6-4a86-4d9f-9e03-a2dfee6ed7f5
+  sni: speedtestmark.com
+  client-fingerprint: firefox
+  country: GB
+- name: 🇮🇹 Италия 06
+  type: ss
+  server: 202.50.253.18
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: IT
+- name: 🇮🇹 Италия 07
+  type: ss
+  server: 149.50.215.234
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: IT
+- name: 🇫🇮 Финляндия 02
   type: hysteria2
   server: 144.31.109.158
   port: 4444
@@ -757,203 +1264,15 @@ proxies:
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   country: MX
-- name: 🇯🇵 Япония 03
-  type: tuic
-  server: de0bc027-teisg0-thtg7i-1lkt0.jp5.hyhuawei.com
-  port: 443
-  uuid: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
-  password: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
-  congestion-controller: bbr
-  alpn:
-  - h3
-  udp-relay-mode: native
-  reduce-rtt: true
-  udp: true
-  sni: de0bc027-teisg0-thtg7i-1lkt0.jp5.hyhuawei.com
-  country: JP
-  client-fingerprint: firefox
-- name: 🇮🇹 Италия 01
+- name: 🇪🇸 Испания 02
   type: ss
-  server: 185.164.175.81
+  server: 66.163.118.103
   port: 19999
   udp: true
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  country: IT
-- name: 🇩🇪 Германия 11
-  type: vless
-  server: de.poncheki.xyz
-  port: 2083
-  uuid: 13bf9403-22d1-4221-939b-f6606c423139
-  udp: true
-  tls: true
-  network: grpc
-  servername: vk.com
-  reality-opts:
-    public-key: NWNI1krUm5rhcIRnP3KVvatf9hNKu_H-93bPUdw4cxw
-    short-id: 0ad9fd399087e404
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: tjwvrf1q9d0n
-  country: DE
-- name: 🇬🇧 Великобритания 05
-  type: hysteria2
-  server: 92.242.165.40
-  port: 8443
-  password: 2f0fccb6-4a86-4d9f-9e03-a2dfee6ed7f5
-  sni: speedtestmark.com
-  client-fingerprint: firefox
-  country: GB
-- name: 🇩🇪 Германия 12
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  udp: true
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  country: DE
-- name: 🇭🇰 Гонконг 01
-  type: tuic
-  server: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
-  port: 443
-  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
-  password: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
-  congestion-controller: bbr
-  alpn:
-  - h3
-  udp-relay-mode: native
-  reduce-rtt: true
-  udp: true
-  country: HK
-  client-fingerprint: firefox
-- name: 🇬🇧 Великобритания 06
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  country: GB
-- name: 🇯🇵 Япония 04
-  type: hysteria2
-  server: vp3.yysyy.online
-  port: 443
-  password: 96ab5cd282733fd4c312a61f972f330a
-  sni: vp3.yysyy.online
-  client-fingerprint: firefox
-  country: JP
-- name: 🇭🇰 Гонконг 02
-  type: tuic
-  server: 1fd0c4d5-tk7400-tlbcwm-1rfon.pccw3.hyhuawei.com
-  port: 443
-  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  congestion-controller: bbr
-  alpn:
-  - h3
-  udp-relay-mode: native
-  reduce-rtt: true
-  udp: true
-  country: HK
-  client-fingerprint: firefox
-- name: 🇯🇵 Япония 05
-  type: hysteria2
-  server: vp3.yysyy.online
-  port: 443
-  password: 96ab5cd282733fd4c312a61f972f330a
-  client-fingerprint: firefox
-  country: JP
-- name: 🇯🇵 Япония 06
-  type: hysteria2
-  server: 45.32.10.7
-  port: 443
-  password: 96ab5cd282733fd4c312a61f972f330a
-  sni: vp3.yysyy.online
-  client-fingerprint: firefox
-  country: JP
-- name: 🇭🇰 Гонконг 03
-  type: tuic
-  server: 8c09515a-tk7400-tlvq5w-1jcwu.pccw3.hyhuawei.com
-  port: 443
-  uuid: f93486ce-cc84-11ed-9e98-f23c913c8d2b
-  password: f93486ce-cc84-11ed-9e98-f23c913c8d2b
-  congestion-controller: bbr
-  alpn:
-  - h3
-  udp-relay-mode: native
-  reduce-rtt: true
-  udp: true
-  country: HK
-  client-fingerprint: firefox
-- name: 🇵🇱 Польша 09
-  type: ss
-  server: 54.36.174.140
-  port: 443
-  udp: true
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
-  country: PL
-- name: 🇬🇧 Великобритания 07
-  type: vmess
-  server: 149.7.16.228
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: tcp
-  servername: xmfhlpy.com
-  country: GB
-  client-fingerprint: firefox
-- name: 🇹🇼 Тайвань 01
-  type: hysteria2
-  server: 103.115.109.49
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: TW
-- name: 🇵🇱 Польша 10
-  type: vless
-  server: 147.45.126.220
-  port: 443
-  uuid: c927550b-2cc3-43ae-9177-09a9f6eb8e95
-  udp: true
-  tls: true
-  network: grpc
-  servername: pol.qikbro.com
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: assets
-  country: PL
-- name: 🇹🇼 Тайвань 02
-  type: hysteria2
-  server: 103.115.109.49
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: TW
-- name: 🇭🇰 Гонконг 04
-  type: hysteria2
-  server: 7b0450c8-tmm5c0-trg4wh-z65w.hk3.hyhuawei.com
-  port: 443
-  password: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
-  client-fingerprint: firefox
-  country: HK
-- name: 🇹🇼 Тайвань 03
-  type: hysteria2
-  server: 103.115.109.49
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3A
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: TW
-- name: 🇬🇧 Великобритания 08
+  country: ES
+- name: 🇬🇧 Великобритания 11
   type: vless
   server: 132.243.207.154
   port: 443
@@ -968,131 +1287,56 @@ proxies:
   client-fingerprint: firefox
   flow: xtls-rprx-vision
   country: GB
-- name: 🇹🇼 Тайвань 04
+- name: 🇷🇴 Румыния 01
   type: hysteria2
-  server: vpn-tw-002.fastervpn.world
+  server: 185.156.44.99
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  password: gf1:gfhysteria2024
   skip-cert-verify: true
   client-fingerprint: firefox
-  country: TW
-- name: 🇩🇪 Германия 13
-  type: ss
-  server: 213.202.208.199
-  port: 5000
-  udp: true
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  country: DE
-- name: 🇯🇵 Япония 07
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  udp: true
-  cipher: aes-128-gcm
-  password: shadowsocks
-  country: JP
-- name: 🇹🇼 Тайвань 05
+  country: RO
+- name: 🇷🇴 Румыния 02
   type: hysteria2
-  server: 160.187.100.109
+  server: 162.249.125.133
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  skip-cert-verify: true
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
   client-fingerprint: firefox
-  country: TW
-- name: 🇯🇵 Япония 08
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  udp: true
-  cipher: aes-128-gcm
-  password: shadowsocks
-  country: JP
-- name: 🇹🇼 Тайвань 06
-  type: hysteria2
-  server: 103.115.109.49
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: TW
-- name: 🇭🇰 Гонконг 05
-  type: hysteria2
-  server: a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com
-  port: 443
-  password: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
-  sni: a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com
-  client-fingerprint: firefox
-  country: HK
-- name: 🇭🇰 Гонконг 06
-  type: hysteria2
-  server: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  port: 443
-  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  sni: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  client-fingerprint: firefox
-  country: HK
-- name: 🇬🇧 Великобритания 09
+  country: RO
+- name: 🇹🇷 Турция 01
   type: vless
-  server: 51.89.194.151
-  port: 2053
-  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
+  server: 62.133.63.45
+  port: 8444
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
   udp: true
   tls: true
-  network: tcp
-  servername: www.apple.com
+  network: grpc
+  servername: github.com
   reality-opts:
-    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
-    short-id: d051f678212f9d54
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
   client-fingerprint: firefox
-  country: GB
-- name: 🇭🇰 Гонконг 07
-  type: hysteria2
-  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  port: 443
-  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
-  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  client-fingerprint: firefox
-  country: HK
-- name: 🇭🇰 Гонконг 08
-  type: hysteria2
-  server: f7f4da49-tmm5c0-tqgocx-1plv4.hk3.hyhuawei.com
-  port: 443
-  password: 28213b50-7ed5-11ee-add6-f23c91369f2d
-  client-fingerprint: firefox
-  country: HK
-- name: 🇭🇰 Гонконг 09
-  type: hysteria2
-  server: fc0786a4-tmm5c0-tw2fdz-1s824.nw4.hyhuawei.com
-  port: 443
-  password: 6d4abac0-86e6-11ef-83cc-f23c913c8d2b
-  sni: fc0786a4-tmm5c0-tw2fdz-1s824.nw4.hyhuawei.com
-  client-fingerprint: firefox
-  country: HK
-- name: 🇭🇰 Гонконг 10
-  type: hysteria2
-  server: 70527201-tmm5c0-tubliy-1la7v.hk3.hyhuawei.com
-  port: 443
-  password: 460749c2-bcef-11ee-89fc-f23c913c8d2b
-  client-fingerprint: firefox
-  country: HK
-- name: 🇭🇰 Гонконг 11
-  type: hysteria2
-  server: d280a266-tmm5c0-tzxeoy-hns7.hk3.hyhuawei.com
-  port: 443
-  password: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
-  client-fingerprint: firefox
-  country: HK
-- name: 🇹🇼 Тайвань 07
-  type: hysteria2
-  server: 103.115.109.49
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: TW
-- name: 🇯🇵 Япония 09
+  grpc-opts:
+    grpc-service-name: GunService
+  country: TR
+- name: 🇪🇸 Испания 03
+  type: ss
+  server: 79.127.139.242
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: ES
+- name: 🇮🇹 Италия 08
+  type: ss
+  server: 202.50.253.90
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: IT
+- name: 🇯🇵 Япония 04
   type: hysteria2
   server: 8.211.175.236
   port: 8443
@@ -1100,70 +1344,19 @@ proxies:
   skip-cert-verify: true
   client-fingerprint: firefox
   country: JP
-- name: 🇹🇼 Тайвань 08
-  type: hysteria2
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world%5cu0026insecure%3d1%5cu0026allowinsecure%3d1
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: TW
-- name: 🇯🇵 Япония 10
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  udp: true
-  cipher: aes-128-gcm
-  password: shadowsocks
-  country: JP
-- name: 🇸🇬 Сингапур 01
-  type: hysteria2
-  server: 172.236.139.236
-  port: 443
-  password: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
-  sni: 0259fa63-tmm5c0-tvb36r-1qwom.sg7.hyhuawei.com
-  client-fingerprint: firefox
-  country: SG
-- name: 🇸🇬 Сингапур 02
-  type: hysteria2
-  server: 172.236.139.236
-  port: 443
-  password: 5a4c13ae-6673-11ee-a149-f23c9164ca5d
-  sni: 014dd758-tmm5c0-tpda83-1lkbs.sg7.hyhuawei.com
-  client-fingerprint: firefox
-  country: SG
-- name: 🇸🇬 Сингапур 03
-  type: hysteria2
-  server: 02b717f0-tmm5c0-twj07b-fm2v.sg7.hyhuawei.com
-  port: 443
-  password: 3fed19ea-1671-11f0-bd2e-f23c9164ca5d
-  client-fingerprint: firefox
-  country: SG
-- name: 🇩🇪 Германия 14
+- name: 🇬🇧 Великобритания 12
   type: vless
-  server: 5.252.179.15
+  server: 107.181.134.155
   port: 443
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+  uuid: 5fb552a8-9c41-4031-86f5-ca10fc802da5
   udp: true
   tls: true
   network: tcp
-  servername: www.bing.com
-  reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
+  servername: pah3.vethilis.ru
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-  country: DE
-- name: 🇸🇬 Сингапур 04
-  type: hysteria2
-  server: 172.236.139.236
-  port: 443
-  password: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
-  sni: 01bf04fd-tmm5c0-tnhx9s-1rnrp.sg7.hyhuawei.com
-  client-fingerprint: firefox
-  country: SG
-- name: 🇬🇧 Великобритания 10
+  country: GB
+- name: 🇬🇧 Великобритания 13
   type: vless
   server: 23.81.36.148
   port: 1222
@@ -1177,46 +1370,26 @@ proxies:
     short-id: a25d0f
   client-fingerprint: chrome
   country: GB
-- name: 🇸🇬 Сингапур 05
+- name: 🇭🇰 Гонконг 02
   type: hysteria2
-  server: 01bf04fd-tmm5c0-tnhx9s-1rnrp.sg7.hyhuawei.com
+  server: 202.146.222.29
   port: 443
-  password: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2��
+  skip-cert-verify: true
   client-fingerprint: firefox
-  country: SG
-- name: 🇸🇬 Сингапур 06
+  country: HK
+- name: 🇷🇴 Румыния 03
   type: hysteria2
-  server: 0259fa63-tmm5c0-tvb36r-1qwom.sg7.hyhuawei.com
+  server: hy2-new.aspidnet.xyz
   port: 443
-  password: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
-  sni: 0259fa63-tmm5c0-tvb36r-1qwom.sg7.hyhuawei.com
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
   client-fingerprint: firefox
-  country: SG
-- name: 🇸🇬 Сингапур 07
-  type: hysteria2
-  server: 00048af8-tmeqo0-tr9h64-1f1f1.sg7.hyhuawei.com
-  port: 443
-  password: 61c4be90-6235-11ec-a8bf-f23c91cfbbc9
-  sni: 00048af8-tmeqo0-tr9h64-1f1f1.sg7.hyhuawei.com
-  client-fingerprint: firefox
-  country: SG
-- name: 🇦🇹 Австрия
-  type: ss
-  server: 152.53.1.57
-  port: 8388
-  udp: true
-  cipher: chacha20-ietf-poly1305
-  password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
-  country: AT
-- name: 🇸🇬 Сингапур 08
-  type: hysteria2
-  server: 01bf04fd-tmm5c0-tnhx9s-1rnrp.sg7.hyhuawei.com
-  port: 443
-  password: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
-  sni: 01bf04fd-tmm5c0-tnhx9s-1rnrp.sg7.hyhuawei.com
-  client-fingerprint: firefox
-  country: SG
-- name: 🇹🇷 Турция 01
+  country: RO
+- name: 🇹🇷 Турция 02
   type: vless
   server: 62.133.63.45
   port: 8444
@@ -1232,7 +1405,48 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
   country: TR
-- name: 🇹🇷 Турция 02
+- name: 🇬🇧 Великобритания 14
+  type: vless
+  server: 206.245.166.44
+  port: 443
+  uuid: 5fb552a8-9c41-4031-86f5-ca10fc802da5
+  udp: true
+  tls: true
+  network: tcp
+  servername: pah2.vethilis.ru
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  country: GB
+- name: 🇪🇸 Испания 04
+  type: ss
+  server: 62.93.179.97
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: ES
+- name: 🇬🇧 Великобритания 15
+  type: vmess
+  server: 149.7.16.228
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: tcp
+  servername: xmfhlpy.com
+  country: GB
+  client-fingerprint: firefox
+- name: 🇪🇸 Испания 05
+  type: ss
+  server: 62.93.179.117
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: ES
+- name: 🇹🇷 Турция 03
   type: vless
   server: 62.133.63.45
   port: 8444
@@ -1248,104 +1462,14 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
   country: TR
-- name: 🇯🇵 Япония 11
+- name: 🇯🇵 Япония 05
   type: hysteria2
-  server: freedom.chenlan.top
-  port: 12765
-  password: STYyftThFn
-  client-fingerprint: firefox
-  country: JP
-- name: 🇹🇷 Турция 03
-  type: vless
-  server: 62.133.63.45
-  port: 8444
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
-  udp: true
-  tls: true
-  network: grpc
-  servername: github.com
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: GunService
-  country: TR
-- name: 🇯🇵 Япония 12
-  type: hysteria2
-  server: freedom.chenlan.top
-  port: 12765
-  password: STYyftThFn
-  sni: freedom.chenlan.top
-  client-fingerprint: firefox
-  country: JP
-- name: 🇯🇵 Япония 13
-  type: hysteria2
-  server: 85.121.123.197
-  port: 12765
-  password: STYyftThFn
-  sni: freedom.chenlan.top
-  client-fingerprint: firefox
-  country: JP
-- name: 🇵🇱 Польша 11
-  type: vless
-  server: 147.45.126.220
+  server: vp3.yysyy.online
   port: 443
-  uuid: 3b79d1e4-74a6-411f-9a40-b64189be2c9e
-  udp: true
-  tls: true
-  network: grpc
-  servername: pol.qikbro.com
+  password: 96ab5cd282733fd4c312a61f972f330a
   client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: assets
-  country: PL
-- name: 🇫🇷 Франция 09
-  type: vless
-  server: 62.210.24.143
-  port: 32202
-  uuid: 28148be2-61a7-4f36-8adb-030cc9f82bd0
-  udp: true
-  tls: true
-  network: xhttp
-  servername: www.amazon.com
-  reality-opts:
-    public-key: bGe_-nAtOq6_w_2mv6pcmD8RzJP65Tti-vyMP2hAwDc
-    short-id: f57d8f26
-  client-fingerprint: chrome
-  xhttp-opts:
-    path: /G3EEoH63
-    mode: auto
-  country: FR
-- name: 🇫🇷 Франция 10
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.apple.com
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  client-fingerprint: chrome
-  country: FR
-- name: 🇫🇷 Франция 11
-  type: vless
-  server: 62.210.91.2
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  tls: true
-  network: tcp
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  country: FR
-- name: 🇷🇴 Румыния 01
+  country: JP
+- name: 🇷🇴 Румыния 04
   type: hysteria2
   server: hy2-new.aspidnet.xyz
   port: 443
@@ -1355,58 +1479,7 @@ proxies:
   obfs-password: c1b4086fea89914496c7e10967a419216566
   client-fingerprint: firefox
   country: RO
-- name: 🇩🇪 Германия 15
-  type: vless
-  server: music.3apes.online
-  port: 443
-  uuid: 12776e55-6230-48b9-b069-1bb8a04b4237
-  udp: true
-  tls: true
-  network: tcp
-  servername: music.3apes.online
-  reality-opts:
-    public-key: q4_o7NvD6vQg4hYsyO29Q6PVufjTJHDUbQTqstre9EQ
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-  country: DE
-- name: 🇯🇵 Япония 14
-  type: hysteria2
-  server: 138.3.208.26
-  port: 50160
-  password: 184cdec28da5a09450803c8debcd2cc9
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: JP
-- name: 🇫🇷 Франция 12
-  type: vless
-  server: 62.210.91.10
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  tls: true
-  network: tcp
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  country: FR
-- name: 🇫🇷 Франция 13
-  type: vless
-  server: 62.210.91.2
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  tls: true
-  network: tcp
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: FR
-- name: 🇸🇪 Швеция 04
+- name: 🇸🇪 Швеция 05
   type: vless
   server: 150.241.79.124
   port: 443
@@ -1421,72 +1494,206 @@ proxies:
   client-fingerprint: firefox
   flow: xtls-rprx-vision
   country: SE
-- name: 🇷🇴 Румыния 02
+- name: 🇯🇵 Япония 06
   type: hysteria2
-  server: 162.249.125.133
+  server: 45.32.10.7
   port: 443
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
+  password: 96ab5cd282733fd4c312a61f972f330a
+  sni: vp3.yysyy.online
   client-fingerprint: firefox
-  country: RO
-- name: 🇫🇷 Франция 14
-  type: vless
-  server: 62.210.91.10
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  tls: true
-  network: tcp
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: FR
-- name: 🇯🇵 Япония 15
-  type: vless
-  server: 31.76.91.98
-  port: 443
-  uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
-  udp: true
-  tls: true
-  network: tcp
-  servername: fuji.etherhub.cc
-  reality-opts:
-    public-key: ejx56dFtS4LK_Th6HSLFFdm7v7zqRpv8KfjrWAw4Sjg
-    short-id: bd6f67b6b2152b45
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
   country: JP
-- name: 🇫🇷 Франция 15
-  type: vless
-  server: 62.210.91.2
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  tls: true
-  network: tcp
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-    spider-x: /HesarWeb
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: FR
-- name: 🇷🇴 Румыния 03
+- name: 🇹🇷 Турция 04
   type: hysteria2
-  server: hy2-new.aspidnet.xyz
-  port: 443
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
+  server: 206.1.96.108
+  port: 7443
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
   obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
   client-fingerprint: firefox
-  country: RO
-- name: 🇪🇸 Испания 01
+  country: TR
+- name: 🇭🇰 Гонконг 03
+  type: tuic
+  server: 1fd0c4d5-tk7400-tlbcwm-1rfon.pccw3.hyhuawei.com
+  port: 443
+  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  congestion-controller: bbr
+  alpn:
+  - h3
+  udp-relay-mode: native
+  reduce-rtt: true
+  udp: true
+  country: HK
+  client-fingerprint: firefox
+- name: 🇵🇱 Польша 09
+  type: ss
+  server: 54.36.174.134
+  port: 443
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  country: PL
+- name: 🇵🇱 Польша 10
+  type: ss
+  server: 54.36.174.140
+  port: 443
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  country: PL
+- name: 🇭🇰 Гонконг 04
+  type: tuic
+  server: 46b61821-tki800-tlwmty-1gevg.pccw3.hyhuawei.com
+  port: 443
+  uuid: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
+  password: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
+  congestion-controller: bbr
+  alpn:
+  - h3
+  udp-relay-mode: native
+  reduce-rtt: true
+  udp: true
+  sni: 46b61821-tki800-tlwmty-1gevg.pccw3.hyhuawei.com
+  country: HK
+  client-fingerprint: firefox
+- name: 🇭🇰 Гонконг 05
+  type: tuic
+  server: 8c09515a-tk7400-tlvq5w-1jcwu.pccw3.hyhuawei.com
+  port: 443
+  uuid: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  password: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  congestion-controller: bbr
+  alpn:
+  - h3
+  udp-relay-mode: native
+  reduce-rtt: true
+  udp: true
+  country: HK
+  client-fingerprint: firefox
+- name: 🇭🇰 Гонконг 06
+  type: tuic
+  server: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
+  port: 443
+  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
+  password: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
+  congestion-controller: bbr
+  alpn:
+  - h3
+  udp-relay-mode: native
+  reduce-rtt: true
+  udp: true
+  country: HK
+  client-fingerprint: firefox
+- name: 🇵🇱 Польша 11
+  type: ss
+  server: pl134.vpnbook.com
+  port: 443
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  country: PL
+- name: 🇯🇵 Япония 07
+  type: hysteria2
+  server: 138.3.208.26
+  port: 50160
+  password: 184cdec28da5a09450803c8debcd2cc9
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: JP
+- name: 🇵🇱 Польша 12
+  type: ss
+  server: pl140.vpnbook.com
+  port: 443
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  country: PL
+- name: 🇯🇵 Япония 08
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  udp: true
+  cipher: aes-128-gcm
+  password: shadowsocks
+  country: JP
+- name: 🇹🇼 Тайвань 01
+  type: hysteria2
+  server: 103.115.109.49
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: TW
+- name: 🇭🇰 Гонконг 07
+  type: hysteria2
+  server: 31.57.248.176
+  port: 50160
+  password: b0917015b656b3dd2286b5633af0c5c1
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: HK
+- name: 🇯🇵 Япония 09
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  udp: true
+  cipher: aes-128-gcm
+  password: shadowsocks
+  country: JP
+- name: 🇹🇼 Тайвань 02
+  type: hysteria2
+  server: 103.115.109.49
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: TW
+- name: 🇯🇵 Япония 10
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  udp: true
+  cipher: aes-128-gcm
+  password: shadowsocks
+  country: JP
+- name: 🇭🇰 Гонконг 08
+  type: hysteria2
+  server: 202.146.222.89
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8🇨🇳
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: HK
+- name: 🇭🇰 Гонконг 09
+  type: hysteria2
+  server: 202.146.222.29
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2рҹүёрҹүі
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: HK
+- name: 🇯🇵 Япония 11
+  type: hysteria2
+  server: vp3.yysyy.online
+  port: 443
+  password: 96ab5cd282733fd4c312a61f972f330a
+  sni: vp3.yysyy.online
+  client-fingerprint: firefox
+  country: JP
+- name: 🇭🇰 Гонконг 10
+  type: hysteria2
+  server: 112.120.123.140
+  port: 443
+  password: bdf3e15e-c64c-11ea-82ef-f23c9164ca5d
+  sni: ae410052-tmm5c0-tsdg75-tlhh.nw4.hyhuawei.com
+  client-fingerprint: firefox
+  country: HK
+- name: 🇪🇸 Испания 06
   type: vless
   server: 212.227.235.66
   port: 2053
@@ -1500,33 +1707,111 @@ proxies:
     short-id: 29e8dcd2b37aaa7f
   client-fingerprint: chrome
   country: ES
-- name: 🇰🇷 Южная Корея 01
+- name: 🇭🇰 Гонконг 11
   type: hysteria2
-  server: 152.70.237.123
-  port: 2053
-  password: maintell
+  server: 152.32.254.68
+  port: 5010
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+  client-fingerprint: firefox
+  country: HK
+- name: 🇭🇰 Гонконг 12
+  type: hysteria2
+  server: 112.120.123.140
+  port: 443
+  password: 1cce7df2-251c-11ee-9409-f23c9164ca5d
+  sni: a30d91ee-tmm5c0-ttx5yr-1j0y6.nw4.hyhuawei.com
+  client-fingerprint: firefox
+  country: HK
+- name: 🇭🇰 Гонконг 13
+  type: hysteria2
+  server: 007618a8-tmm5c0-tvvhcz-tl32.hk3.hyhuawei.com
+  port: 443
+  password: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+  sni: 007618a8-tmm5c0-tvvhcz-tl32.hk3.hyhuawei.com
+  client-fingerprint: firefox
+  country: HK
+- name: 🇹🇼 Тайвань 03
+  type: hysteria2
+  server: 103.115.109.49
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   skip-cert-verify: true
   client-fingerprint: firefox
-  country: KR
-- name: 🇸🇪 Швеция 05
+  country: TW
+- name: 🇹🇼 Тайвань 04
+  type: hysteria2
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: TW
+- name: 🇹🇼 Тайвань 05
+  type: hysteria2
+  server: 160.187.100.109
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: TW
+- name: 🇹🇼 Тайвань 06
+  type: hysteria2
+  server: 103.115.109.49
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: TW
+- name: 🇨🇭 Швейцария 07
   type: trojan
-  server: 70.34.207.14
+  server: 208.69.78.33
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  sni: courses.yourultimateprofessionalcareerhub.com
   client-fingerprint: chrome
   network: tcp
-  country: SE
-- name: 🇰🇷 Южная Корея 02
+  country: CH
+- name: 🇨🇭 Швейцария 08
+  type: trojan
+  server: 208.69.78.29
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: learn.yourultimateprofessionalcareerhub.com
+  client-fingerprint: firefox
+  network: tcp
+  country: CH
+- name: 🇹🇼 Тайвань 07
   type: hysteria2
-  server: 152.67.200.82
-  port: 50160
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: whatsapp.com
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-tw-002.fastervpn.world%5cu0026insecure%3d1%5cu0026allowinsecure%3d1
   skip-cert-verify: true
   client-fingerprint: firefox
-  country: KR
+  country: TW
+- name: 🇹🇼 Тайвань 08
+  type: hysteria2
+  server: 103.115.109.49
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/WangCai2🇨🇳
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: TW
+- name: 🇸🇬 Сингапур 01
+  type: hysteria2
+  server: 0c8a39e2-tmkao0-tqsp0c-1imi4.sg7.hyhuawei.com
+  port: 443
+  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  sni: 0c8a39e2-tmkao0-tqsp0c-1imi4.sg7.hyhuawei.com
+  client-fingerprint: firefox
+  country: SG
 - name: 🇨🇿 Чехия 01
   type: vless
   server: 195.123.245.241
@@ -1542,93 +1827,112 @@ proxies:
   client-fingerprint: firefox
   flow: xtls-rprx-vision
   country: CZ
-- name: 🇰🇷 Южная Корея 03
+- name: 🇸🇬 Сингапур 02
   type: hysteria2
-  server: 152.67.200.82
-  port: 50160
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: google.com
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: KR
-- name: 🇰🇷 Южная Корея 04
-  type: hysteria2
-  server: 150-230-252-217.liao.kdns.fr
-  port: 50160
-  password: 9cfc9458e48c028ec03ff86ebc71c744
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: KR
-- name: 🇵🇱 Польша 12
-  type: vless
-  server: 2.26.255.215
+  server: 03e3b5df-tmkao0-u4zg37-1jcwu.sg7.hyhuawei.com
   port: 443
-  uuid: 69e41e64-a832-471a-b740-94577ca85520
-  udp: true
-  tls: true
-  network: tcp
-  servername: cloudflare.com
-  reality-opts:
-    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
-    short-id: '50'
+  password: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  sni: 03e3b5df-tmkao0-u4zg37-1jcwu.sg7.hyhuawei.com
   client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: PL
-- name: 🇰🇷 Южная Корея 05
-  type: hysteria2
-  server: 152.67.200.82
-  port: 50160
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  country: KR
-- name: 🇵🇱 Польша 13
+  country: SG
+- name: 🇨🇭 Швейцария 09
   type: trojan
-  server: 70.34.252.255
+  server: 208.69.78.19
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  sni: www.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: true
   client-fingerprint: chrome
   network: tcp
-  country: PL
-- name: 🇵🇱 Польша 14
-  type: vless
-  server: 217.30.10.72
-  port: 443
-  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
-  udp: true
-  tls: true
-  network: tcp
-  servername: images.porsche.com
-  reality-opts:
-    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
-    short-id: 1a2b3c4d
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: PL
-- name: 🇪🇸 Испания 02
-  type: vless
-  server: 45.198.55.200
-  port: 25150
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.samsung.com
-  reality-opts:
-    public-key: Qvn7tV54mdqxJ40LmmoI1PRM1QKXEbfFOZS-omPKhGY
-    short-id: 4301a484cc762aa6
-  client-fingerprint: chrome
-  country: ES
-- name: 🇰🇷 Южная Корея 06
+  country: CH
+- name: 🇸🇬 Сингапур 03
   type: hysteria2
-  server: 152-69-231-175.liao.kdns.fr
+  server: 00048af8-tmeqo0-tr9h64-1f1f1.sg7.hyhuawei.com
+  port: 443
+  password: 61c4be90-6235-11ec-a8bf-f23c91cfbbc9
+  sni: 00048af8-tmeqo0-tr9h64-1f1f1.sg7.hyhuawei.com
+  client-fingerprint: firefox
+  country: SG
+- name: 🇸🇪 Швеция 06
+  type: trojan
+  server: 70.34.207.14
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  client-fingerprint: chrome
+  network: tcp
+  country: SE
+- name: 🇸🇬 Сингапур 04
+  type: hysteria2
+  server: 172.236.139.236
+  port: 443
+  password: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
+  sni: 0259fa63-tmm5c0-tvb36r-1qwom.sg7.hyhuawei.com
+  client-fingerprint: firefox
+  country: SG
+- name: 🇸🇬 Сингапур 05
+  type: hysteria2
+  server: 172.236.139.236
+  port: 443
+  password: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
+  sni: 01bf04fd-tmm5c0-tnhx9s-1rnrp.sg7.hyhuawei.com
+  client-fingerprint: firefox
+  country: SG
+- name: 🇸🇬 Сингапур 06
+  type: hysteria2
+  server: 172.236.139.236
+  port: 443
+  password: 5a4c13ae-6673-11ee-a149-f23c9164ca5d
+  sni: 014dd758-tmm5c0-tpda83-1lkbs.sg7.hyhuawei.com
+  client-fingerprint: firefox
+  country: SG
+- name: 🇸🇬 Сингапур 07
+  type: hysteria2
+  server: 138.2.73.238
   port: 50160
-  password: 1beb216e3f60aea9555dae60d219a5ca
+  password: f87376e17da040ed04c9665ce8972930
   skip-cert-verify: true
   client-fingerprint: firefox
-  country: KR
+  country: SG
+- name: 🇯🇵 Япония 12
+  type: hysteria2
+  server: 85.121.123.197
+  port: 12765
+  password: STYyftThFn
+  sni: freedom.chenlan.top
+  client-fingerprint: firefox
+  country: JP
+- name: 🇸🇬 Сингапур 08
+  type: hysteria2
+  server: 01bf04fd-tmm5c0-tnhx9s-1rnrp.sg7.hyhuawei.com
+  port: 443
+  password: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
+  sni: 01bf04fd-tmm5c0-tnhx9s-1rnrp.sg7.hyhuawei.com
+  client-fingerprint: firefox
+  country: SG
+- name: 🇨🇭 Швейцария 10
+  type: trojan
+  server: 208.69.78.158
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: api.yourultimateprofessionalcareerhub.com
+  client-fingerprint: chrome
+  network: tcp
+  country: CH
+- name: 🇪🇸 Испания 07
+  type: trojan
+  server: 66.163.118.244
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: 66.163.118.244
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: tcp
+  country: ES
 - name: 🇨🇿 Чехия 02
   type: vless
   server: 212.102.38.25
@@ -1644,16 +1948,214 @@ proxies:
   client-fingerprint: firefox
   flow: xtls-rprx-vision
   country: CZ
-- name: 🇰🇷 Южная Корея 07
+- name: 🇯🇵 Япония 13
   type: hysteria2
-  server: 152.67.200.82
-  port: 50160
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: t.me
-  skip-cert-verify: true
+  server: freedom.chenlan.top
+  port: 12765
+  password: STYyftThFn
+  sni: freedom.chenlan.top
   client-fingerprint: firefox
-  country: KR
-- name: 🇸🇪 Швеция 06
+  country: JP
+- name: 🇨🇭 Швейцария 11
+  type: trojan
+  server: 208.69.78.222
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: yourultimateprofessionalcareerhub.com
+  client-fingerprint: chrome
+  network: tcp
+  country: CH
+- name: 🇪🇸 Испания 08
+  type: trojan
+  server: 66.163.118.62
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: courses.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: tcp
+  country: ES
+- name: 🇪🇸 Испания 09
+  type: trojan
+  server: 66.163.118.166
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: learn.discovergreatjobsandadvanceyourcareer.com
+  client-fingerprint: firefox
+  network: tcp
+  country: ES
+- name: 🇪🇸 Испания 10
+  type: trojan
+  server: 66.163.118.131
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: www.discovergreatjobsandadvanceyourcareer.com
+  client-fingerprint: firefox
+  network: tcp
+  country: ES
+- name: 🇨🇭 Швейцария 12
+  type: vless
+  server: 45.90.59.15
+  port: 443
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  udp: true
+  tls: true
+  network: tcp
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  country: CH
+- name: 🇵🇱 Польша 13
+  type: trojan
+  server: 70.34.252.255
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  client-fingerprint: chrome
+  network: tcp
+  country: PL
+- name: 🇵🇱 Польша 14
+  type: vless
+  server: 2.26.255.215
+  port: 443
+  uuid: 69e41e64-a832-471a-b740-94577ca85520
+  udp: true
+  tls: true
+  network: tcp
+  servername: cloudflare.com
+  reality-opts:
+    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
+    short-id: '50'
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  country: PL
+- name: 🇪🇸 Испания 11
+  type: trojan
+  server: 66.163.118.244
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: api.discovergreatjobsandadvanceyourcareer.com
+  client-fingerprint: firefox
+  network: tcp
+  country: ES
+- name: 🇨🇭 Швейцария 13
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  network: tcp
+  servername: www.apple.com
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  client-fingerprint: chrome
+  country: CH
+- name: 🇨🇿 Чехия 03
+  type: vless
+  server: 178.208.89.21
+  port: 443
+  uuid: 689a62e4-37e7-41de-9e6a-f2a56368c9e2
+  udp: true
+  tls: true
+  network: tcp
+  servername: prod-eu-east-cz6.api-gateway.service-mesh.ingress-observability.speedtestinternet.link
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  country: CZ
+- name: 🇯🇵 Япония 14
+  type: hysteria2
+  server: freedom.chenlan.top
+  port: 12765
+  password: STYyftThFn
+  client-fingerprint: firefox
+  country: JP
+- name: 🇷🇺 Россия 01
+  type: vless
+  server: 185.207.66.160
+  port: 443
+  uuid: a292fd7d-d4ab-4441-aae3-69784202b321
+  udp: true
+  tls: true
+  servername: basterdym.asia
+  alpn:
+  - h2
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: glush.de1.v1
+  country: RU
+- name: 🇵🇱 Польша 15
+  type: vless
+  server: 217.30.10.72
+  port: 443
+  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
+  udp: true
+  tls: true
+  network: tcp
+  servername: images.porsche.com
+  reality-opts:
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  country: PL
+- name: 🇨🇴 Колумбия
+  type: ss
+  server: 149.104.107.41
+  port: 8090
+  udp: true
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+  country: CO
+- name: 🇹🇷 Турция 05
+  type: ss
+  server: pg2.rmastore.ir
+  port: 3040
+  udp: true
+  cipher: aes-256-gcm
+  password: c5PtLhylY5r3jJQ6XlzGiOdXeYYlhu-k
+  country: TR
+- name: 🇯🇵 Япония 15
+  type: vless
+  server: 31.76.91.70
+  port: 443
+  uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
+  udp: true
+  tls: true
+  network: tcp
+  servername: fuji.etherhub.cc
+  reality-opts:
+    public-key: ejx56dFtS4LK_Th6HSLFFdm7v7zqRpv8KfjrWAw4Sjg
+    short-id: bd6f67b6b2152b45
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  country: JP
+- name: 🇫🇮 Финляндия 03
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: b79d736d-0f10-4169-b626-362059d18204
+  udp: true
+  tls: true
+  network: tcp
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+    short-id: 10351b07c712d2a2
+  client-fingerprint: chrome
+  country: FI
+- name: 🇸🇪 Швеция 07
   type: vmess
   server: 138.199.55.230
   port: 1270
@@ -1666,7 +2168,206 @@ proxies:
   servername: xmfhlpy.com
   country: SE
   client-fingerprint: firefox
-- name: 🇸🇪 Швеция 07
+- name: 🇪🇪 Эстония 02
+  type: vless
+  server: 163.245.52.17
+  port: 443
+  uuid: 43a26f1a-99b7-4b17-98c7-b836fb466999
+  udp: true
+  tls: true
+  network: tcp
+  servername: ee.frgcdn.xyz
+  reality-opts:
+    public-key: RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0
+    short-id: 7a3f9e2b1c8d4f6a
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  country: EE
+- name: 🇷🇺 Россия 02
+  type: vless
+  server: 89.169.47.96
+  port: 443
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  udp: true
+  tls: true
+  network: grpc
+  servername: renderer-bridge-2-129.mirra.now
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: VideoRenderer
+  country: RU
+- name: 🇫🇮 Финляндия 04
+  type: vless
+  server: 177.3.193.43
+  port: 443
+  uuid: 5fb552a8-9c41-4031-86f5-ca10fc802da5
+  udp: true
+  tls: true
+  network: tcp
+  servername: debik1.vethilis.ru
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  country: FI
+- name: 🇰🇷 Южная Корея 01
+  type: hysteria2
+  server: 152.67.200.82
+  port: 50160
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: whatsapp.com
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: KR
+- name: 🇸🇪 Швеция 08
+  type: vless
+  server: 194.104.94.141
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  network: tcp
+  servername: se3.shtil.io
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: SE
+- name: 🇰🇷 Южная Корея 02
+  type: hysteria2
+  server: 152.67.200.82
+  port: 50160
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: google.com
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: KR
+- name: 🇸🇬 Сингапур 09
+  type: ss
+  server: 149.88.107.47
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: SG
+- name: 🇰🇷 Южная Корея 03
+  type: hysteria2
+  server: 152.67.200.82
+  port: 50160
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: KR
+- name: 🇮🇹 Италия 09
+  type: vless
+  server: 82.118.16.187
+  port: 443
+  uuid: dc2259c4-388e-4285-ba18-df619b6672b6
+  udp: true
+  tls: true
+  network: tcp
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU
+    short-id: cd6065902eea7a02
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  country: IT
+- name: 🇸🇬 Сингапур 10
+  type: ss
+  server: 149.88.107.74
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: SG
+- name: 🇰🇷 Южная Корея 04
+  type: hysteria2
+  server: 152.67.200.82
+  port: 50160
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: t.me
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: KR
+- name: 🇨🇭 Швейцария 14
+  type: vless
+  server: p2real5.greewebservices.ir
+  port: 1350
+  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
+  udp: true
+  tls: true
+  network: tcp
+  servername: play.googleapis.com
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: 9b60d3
+  client-fingerprint: ios
+  country: CH
+- name: 🇨🇭 Швейцария 15
+  type: vless
+  server: areal5.greewebservices.ir
+  port: 5455
+  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
+  udp: true
+  tls: true
+  network: tcp
+  servername: amp-api-edge.apps.apple.com
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: e3085d4fc679ba12
+  client-fingerprint: edge
+  country: CH
+- name: 🇰🇷 Южная Корея 05
+  type: hysteria2
+  server: 150-230-252-217.liao.kdns.fr
+  port: 50160
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: KR
+- name: 🇸🇬 Сингапур 11
+  type: ss
+  server: 149.88.106.73
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: SG
+- name: 🇸🇬 Сингапур 12
+  type: ss
+  server: 15.235.164.133
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: SG
+- name: 🇷🇺 Россия 03
+  type: vless
+  server: renderer-bridge-2-129.mirra.now
+  port: 443
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  udp: true
+  tls: true
+  network: grpc
+  servername: renderer-bridge-2-129.mirra.now
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: VideoRenderer
+  country: RU
+- name: 🇪🇪 Эстония 03
+  type: vless
+  server: 31.77.236.114
+  port: 443
+  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
+  udp: true
+  tls: true
+  network: tcp
+  servername: files.porsche.com
+  reality-opts:
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  country: EE
+- name: 🇸🇪 Швеция 09
   type: vless
   server: 193.25.216.31
   port: 443
@@ -1681,7 +2382,88 @@ proxies:
   client-fingerprint: firefox
   flow: xtls-rprx-vision
   country: SE
-- name: 🇨🇿 Чехия 03
+- name: 🇸🇬 Сингапур 13
+  type: ss
+  server: 149.88.106.74
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: SG
+- name: 🇫🇮 Финляндия 05
+  type: vless
+  server: 177.3.193.191
+  port: 443
+  uuid: 5fb552a8-9c41-4031-86f5-ca10fc802da5
+  udp: true
+  tls: true
+  network: tcp
+  servername: debik2.vethilis.ru
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  country: FI
+- name: 🇫🇮 Финляндия 06
+  type: vless
+  server: 13.140.80.136
+  port: 443
+  uuid: e07a6d05-f665-4811-91f0-9b3dc1094e4d
+  udp: true
+  tls: true
+  network: tcp
+  servername: tradingview.com
+  reality-opts:
+    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
+    short-id: 8f3c6e2a1b5d4f09
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  country: FI
+- name: 🇩🇰 Дания 02
+  type: vless
+  server: 144.31.242.142
+  port: 443
+  uuid: f8bdf363-ff05-4fe6-a013-a5605266657e
+  udp: true
+  tls: true
+  network: xhttp
+  servername: 883f1393.con.rasterparcel.tech
+  client-fingerprint: firefox
+  xhttp-opts:
+    path: /conv4/stream/d34366ecdd31367d0fc76955c6b8d77c
+    mode: auto
+  country: DK
+- name: 🇰🇷 Южная Корея 06
+  type: hysteria2
+  server: 132.226.226.189
+  port: 50160
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: www.bing.com
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: KR
+- name: 🇸🇪 Швеция 10
+  type: vless
+  server: se3.shtil.io
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  network: tcp
+  servername: se3.shtil.io
+  client-fingerprint: firefox
+  country: SE
+- name: 🇫🇮 Финляндия 07
+  type: vless
+  server: debik1.vethilis.ru
+  port: 443
+  uuid: 5fb552a8-9c41-4031-86f5-ca10fc802da5
+  udp: true
+  tls: true
+  network: tcp
+  servername: debik1.vethilis.ru
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  country: FI
+- name: 🇨🇿 Чехия 04
   type: vless
   server: 31.76.7.233
   port: 443
@@ -1695,7 +2477,7 @@ proxies:
     path: /conv4/stream/d34366ecdd31367d0fc76955c6b8d77c
     mode: auto
   country: CZ
-- name: 🇰🇷 Южная Корея 08
+- name: 🇰🇷 Южная Корея 07
   type: hysteria2
   server: 132.226.226.189
   port: 50160
@@ -1703,21 +2485,7 @@ proxies:
   skip-cert-verify: true
   client-fingerprint: firefox
   country: KR
-- name: 🇫🇮 Финляндия 02
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: b79d736d-0f10-4169-b626-362059d18204
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
-    short-id: 10351b07c712d2a2
-  client-fingerprint: chrome
-  country: FI
-- name: 🇪🇪 Эстония 02
+- name: 🇪🇪 Эстония 04
   type: vless
   server: ee.frgcdn.xyz
   port: 443
@@ -1733,184 +2501,72 @@ proxies:
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   country: EE
-- name: 🇭🇰 Гонконг 12
+- name: 🇸🇪 Швеция 11
   type: vless
-  server: 182.16.62.14
+  server: sw.golangwikito.cfd
   port: 443
-  uuid: 5bfa133a-76d4-425c-b8d4-72cd2ff18198
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
   udp: true
+  flow: xtls-rprx-vision
   tls: true
-  servername: cloudflare.com
-  client-fingerprint: chrome
+  servername: sw.golangwikito.cfd
+  client-fingerprint: edge
   reality-opts:
-    public-key: npOtPP-gIOAg3Ltra8XJpvpIm3l4FtDKxqrUtSrPOT0
-    short-id: f76d89d0
+    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
+    short-id: a1037b25dcef6aa7
   network: tcp
-  country: HK
-- name: 🇸🇰 Словакия
+  country: SE
+- name: 🇫🇮 Финляндия 08
   type: vless
-  server: 185.112.249.7
+  server: debik2.vethilis.ru
   port: 443
-  uuid: 689a62e4-37e7-41de-9e6a-f2a56368c9e2
+  uuid: 5fb552a8-9c41-4031-86f5-ca10fc802da5
   udp: true
   tls: true
   network: tcp
-  servername: sk3.speedtestinternet.link
+  servername: debik2.vethilis.ru
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-  country: SK
-- name: 🇨🇿 Чехия 04
+  country: FI
+- name: 🇱🇻 Латвия 01
   type: vless
-  server: 178.208.89.21
+  server: 195.123.213.28
   port: 443
-  uuid: 689a62e4-37e7-41de-9e6a-f2a56368c9e2
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
   udp: true
   tls: true
   network: tcp
-  servername: prod-eu-east-cz6.api-gateway.service-mesh.ingress-observability.speedtestinternet.link
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: CZ
-- name: 🇵🇱 Польша 15
-  type: vless
-  server: 147.45.126.220
-  port: 443
-  uuid: 27f94d51-4e59-4d66-aa54-8e14300ea761
-  udp: true
-  tls: true
-  network: grpc
-  servername: pol.qikbro.com
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: assets
-  country: PL
-- name: 🇨🇿 Чехия 05
-  type: vless
-  server: 153.76.190.31
-  port: 2083
-  uuid: d6eb8a46-e6a4-4891-b22e-dfaa609c6afd
-  udp: true
-  tls: true
-  network: ws
-  servername: speedtestmark.com
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
   client-fingerprint: chrome
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: /?Telegram---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP
-  country: CZ
-- name: 🇬🇧 Великобритания 11
+  flow: xtls-rprx-vision
+  country: LV
+- name: 🇰🇷 Южная Корея 08
+  type: hysteria2
+  server: 152-69-231-175.liao.kdns.fr
+  port: 50160
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  country: KR
+- name: 🇱🇻 Латвия 02
   type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  server: 138.124.180.137
+  port: 443
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
   udp: true
   tls: true
   network: tcp
   servername: www.apple.com
   reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  client-fingerprint: random
-  country: GB
-- name: 🇭🇰 Гонконг 13
-  type: vless
-  server: 182.16.62.14
-  port: 443
-  uuid: 5bfa133a-76d4-425c-b8d4-72cd2ff18198
-  udp: true
-  tls: true
-  servername: cloudflare.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: npOtPP-gIOAg3Ltra8XJpvpIm3l4FtDKxqrUtSrPOT0
-  network: tcp
-  country: HK
-- name: 🇪🇸 Испания 03
-  type: vless
-  server: 45.198.55.200
-  port: 25152
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.samsung.com
-  reality-opts:
-    public-key: ZIZIfEd-cs4jAgYIav5ZAkfWaqvpG8DQP-SH6xhGDmc
-    short-id: 08c379434f36cdbe
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-  country: ES
-- name: 🇫🇮 Финляндия 03
-  type: vless
-  server: 217.144.188.185
-  port: 443
-  uuid: 8d954cbe-7ca9-402d-bfaf-aca6c92c04c3
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.nordea.fi
-  reality-opts:
-    public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: FI
-- name: 🇨🇦 Канада 03
-  type: vless
-  server: ov-canada1.09vpn.com
-  port: 8443
-  uuid: 08f96221-9b7b-4e6f-8ffe-aee8b9c9b504
-  udp: true
-  tls: true
-  network: ws
-  servername: ov-canada1.09vpn.com
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-canada1.09vpn.com
-  country: CA
-- name: 🇨🇿 Чехия 06
-  type: vless
-  server: 153.76.190.31
-  port: 2083
-  uuid: d6eb8a46-e6a4-4891-b22e-dfaa609c6afd
-  udp: true
-  tls: true
-  network: ws
-  servername: speedtestmark.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: speedtestmark.com
-  country: CZ
-- name: 🇭🇰 Гонконг 14
-  type: vless
-  server: 154.83.87.6
-  port: 8443
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
-  udp: true
-  tls: true
-  network: tcp
-  servername: github.githubassets.com
-  reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  client-fingerprint: chrome
-  country: HK
+  country: LV
 - name: 🇨🇱 Чили 01
-  type: trojan
-  server: 64.176.7.205
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: tcp
-  country: CL
-- name: 🇨🇱 Чили 02
   type: trojan
   server: 64.176.7.205
   port: 443
@@ -1921,48 +2577,7 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   country: CL
-- name: 🇫🇮 Финляндия 04
-  type: vless
-  server: 78.17.39.129
-  port: 443
-  uuid: c04522c4-3d53-4eab-b5b5-25385d5f11b1
-  udp: true
-  tls: true
-  network: xhttp
-  servername: 78.17.39.129
-  client-fingerprint: firefox
-  xhttp-opts:
-    path: /assets/finvip02/
-    mode: packet-up
-  country: FI
-- name: 🇫🇮 Финляндия 05
-  type: vless
-  server: 78.17.39.129
-  port: 443
-  uuid: c04522c4-3d53-4eab-b5b5-25385d5f11b1
-  udp: true
-  tls: true
-  network: xhttp
-  servername: 78.17.39.129
-  client-fingerprint: firefox
-  xhttp-opts:
-    path: /assets/finvip02/
-  country: FI
-- name: 🇫🇮 Финляндия 06
-  type: vless
-  server: 78.17.39.129
-  port: 443
-  uuid: c04522c4-3d53-4eab-b5b5-25385d5f11b1
-  udp: true
-  tls: true
-  network: xhttp
-  servername: 78.17.39.129
-  client-fingerprint: firefox
-  xhttp-opts:
-    path: /assets/finvip02/
-    mode: auto
-  country: FI
-- name: 🇪🇸 Испания 04
+- name: 🇪🇸 Испания 12
   type: vless
   server: 46.28.71.247
   port: 443
@@ -1977,30 +2592,18 @@ proxies:
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   country: ES
-- name: 🇷🇴 Румыния 04
-  type: vless
-  server: 46.28.67.55
+- name: 🇪🇸 Испания 13
+  type: trojan
+  server: 66.163.118.251
   port: 443
-  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  tls: true
+  sni: resources.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
   network: tcp
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
-    short-id: d06d78e974491b6e
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: RO
-- name: 🇮🇹 Италия 02
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  country: IT
-- name: 🇨🇱 Чили 03
+  country: ES
+- name: 🇨🇱 Чили 02
   type: trojan
   server: 64.176.7.205
   port: 443
@@ -2010,124 +2613,75 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   country: CL
-- name: 🇸🇬 Сингапур 09
-  type: trojan
-  server: 139.180.146.200
-  port: 8886
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  udp: true
-  sni: 139.180.146.200
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  network: tcp
-  country: SG
-- name: 🇮🇱 Израиль
-  type: trojan
-  server: 64.176.163.182
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
-  client-fingerprint: firefox
-  network: tcp
-  country: IL
-- name: 🇸🇬 Сингапур 10
-  type: trojan
-  server: 149.28.130.108
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: searchcreativejobsandshowcaseyourartistictalents.com
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: tcp
-  country: SG
-- name: 🇭🇰 Гонконг 15
+- name: 🇫🇮 Финляндия 09
   type: vless
-  server: 165.154.63.139
+  server: 13.140.94.191
   port: 443
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
   udp: true
   tls: true
   network: tcp
-  servername: www.amazon.com
+  servername: tradingview.com
   reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  country: HK
-- name: 🇩🇰 Дания 02
-  type: vless
-  server: 144.31.242.142
-  port: 443
-  uuid: f8bdf363-ff05-4fe6-a013-a5605266657e
-  udp: true
-  tls: true
-  network: xhttp
-  servername: 883f1393.con.rasterparcel.tech
-  client-fingerprint: firefox
-  xhttp-opts:
-    path: /conv4/stream/d34366ecdd31367d0fc76955c6b8d77c
-    mode: auto
-  country: DK
-- name: 🇹🇼 Тайвань 09
-  type: vless
-  server: 152.32.167.33
-  port: 443
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.amazon.com
-  reality-opts:
-    public-key: Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4
-    short-id: cff998a4
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: TW
-- name: 🇮🇹 Италия 03
-  type: vless
-  server: 82.118.16.187
-  port: 443
-  uuid: dc2259c4-388e-4285-ba18-df619b6672b6
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU
-    short-id: cd6065902eea7a02
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: IT
-- name: 🇸🇬 Сингапур 11
-  type: vless
-  server: djjsg5.wawojk.dpdns.org
-  port: 24204
-  uuid: 59fca0f3-9a6d-471a-9f32-044f353be7eb
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.asus.com
-  reality-opts:
-    public-key: cYQgUq-cSRENj3PWzyBLvXqIdVYSTqQ8vrnYGATiliI
-    short-id: 7788afae
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  country: SG
-- name: 🇫🇮 Финляндия 07
-  type: vless
-  server: debik1.vethilis.ru
-  port: 443
-  uuid: 5fb552a8-9c41-4031-86f5-ca10fc802da5
-  udp: true
-  tls: true
-  network: tcp
-  servername: debik1.vethilis.ru
+    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
+    short-id: 8f3c6e2a1b5d4f09
   client-fingerprint: firefox
   flow: xtls-rprx-vision
   country: FI
+- name: 🇨🇱 Чили 03
+  type: trojan
+  server: 64.176.7.205
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: tcp
+  country: CL
+- name: 🇧🇾 Беларусь 05
+  type: vless
+  server: 178.172.227.228
+  port: 10444
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  udp: true
+  tls: true
+  network: tcp
+  servername: ads.x5.ru
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  country: BY
+- name: 🇮🇳 Индия 01
+  type: vless
+  server: 5.253.28.240
+  port: 2443
+  uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
+  udp: true
+  tls: true
+  network: grpc
+  servername: deepl.com
+  reality-opts:
+    public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
+    short-id: 92c32de179e5d908
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: rex-eb0bf76b710ce763
+  country: IN
+- name: 🇭🇰 Гонконг 14
+  type: vless
+  server: 182.16.62.14
+  port: 443
+  uuid: 5bfa133a-76d4-425c-b8d4-72cd2ff18198
+  udp: true
+  tls: true
+  network: tcp
+  servername: cloudflare.com
+  reality-opts:
+    public-key: npOtPP-gIOAg3Ltra8XJpvpIm3l4FtDKxqrUtSrPOT0
+  client-fingerprint: firefox
+  country: HK
 - name: 🇧🇬 Болгария 01
   type: vless
   server: 195.123.226.21
@@ -2143,18 +2697,7 @@ proxies:
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   country: BG
-- name: 🇲🇾 Малайзия 01
-  type: trojan
-  server: 47.250.84.25
-  port: 443
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  udp: true
-  sni: 47.250.84.25
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  network: tcp
-  country: MY
-- name: 🇷🇺 Россия 01
+- name: 🇷🇺 Россия 04
   type: vless
   server: 185.178.208.140
   port: 443
@@ -2163,661 +2706,106 @@ proxies:
   tls: true
   network: xhttp
   servername: static.bakarova-top.ru
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   xhttp-opts:
     path: /api/v2/events
-    host: static.bakarova-top.ru
-    mode: packet-up
+    mode: auto
   country: RU
-- name: 🇸🇬 Сингапур 12
+- name: 🇫🇮 Финляндия 10
   type: vless
-  server: 162.4.172.55
+  server: 78.17.39.129
   port: 443
-  uuid: 780fab9a-e5be-470c-8c31-51640779ba2c
+  uuid: c04522c4-3d53-4eab-b5b5-25385d5f11b1
   udp: true
   tls: true
-  network: tcp
-  servername: www.samsung.com
-  reality-opts:
-    public-key: ZVMW8jnFE_zxUQjSsZVDaqOY13RGrdnHivXWdXxFhxg
-    short-id: d7fd
-    spider-x: /a9942fb003e9d0e
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  country: SG
-- name: 🇦🇱 Албания 01
-  type: vless
-  server: 130.49.189.36
-  port: 443
-  uuid: 4460652a-ac34-454d-a119-afe8f4dde1a0
-  udp: true
-  tls: true
-  network: tcp
-  servername: alb-4vp.fast-cdn24.com
-  reality-opts:
-    public-key: gTUnUbw-NeqnTyW5FfixJU4uVQLbSKs3chpphO1aMHY
-    short-id: c4f2e1cc1a56fc13
+  network: xhttp
+  servername: 78.17.39.129
   client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: AL
-- name: 🇲🇾 Малайзия 02
-  type: trojan
-  server: 47.250.84.25
-  port: 443
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  udp: true
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  network: tcp
-  country: MY
-- name: 🇲🇾 Малайзия 03
-  type: ss
-  server: 130.94.69.15
-  port: 7001
-  udp: true
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  country: MY
-- name: 🇦🇺 Австралия 01
-  type: trojan
-  server: 45.63.30.142
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: 45.63.30.142
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  network: tcp
-  country: AU
-- name: 🇨🇦 Канада 04
-  type: vless
-  server: 209.200.246.148
-  port: 443
-  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
-    short-id: f98843107912e782
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: CA
-- name: 🇦🇺 Австралия 02
-  type: trojan
-  server: 45.63.30.142
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: connectwithemployerstohireyouridealteam.com
-  client-fingerprint: firefox
-  network: tcp
-  country: AU
-- name: 🇰🇷 Южная Корея 09
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  client-fingerprint: chrome
-  country: KR
-- name: 🇫🇮 Финляндия 08
-  type: hysteria2
-  server: 144.31.109.240
-  port: 4444
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: fl3.nexfile.net
-  client-fingerprint: firefox
+  xhttp-opts:
+    path: /assets/finvip02/
   country: FI
-- name: 🇹🇷 Турция 04
-  type: vless
-  server: 78.135.73.47
-  port: 443
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.datadoghq.com
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: TR
-- name: 🇦🇺 Австралия 03
+- name: 🇮🇱 Израиль
   type: trojan
-  server: 45.63.30.142
+  server: 64.176.163.182
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  skip-cert-verify: true
+  sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
   client-fingerprint: firefox
   network: tcp
-  country: AU
-- name: 🇰🇷 Южная Корея 10
-  type: trojan
-  server: 158.247.255.150
-  port: 48851
-  password: 5t6i121em5lkmsmk
-  udp: true
-  sni: kr002.zestapp778.com
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  network: tcp
-  country: KR
-- name: 🇬🇧 Великобритания 12
+  country: IL
+- name: 🇪🇪 Эстония 05
   type: vless
-  server: 82.39.171.12
+  server: 185.225.205.53
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: 3d526c7f-059c-4e2b-b09a-8569b268935b
   udp: true
   tls: true
   network: tcp
-  servername: yahoo.com
+  servername: addons.mozilla.org
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  country: GB
-- name: 🇹🇷 Турция 05
-  type: vless
-  server: 78.135.73.47
-  port: 443
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.datadoghq.com
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision-udp443
-  country: TR
-- name: 🇸🇬 Сингапур 13
-  type: vless
-  server: 101.32.142.168
-  port: 443
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  udp: true
-  tls: true
-  network: ws
-  servername: xy1ej.stream-node-us.danfeng.qzz.io
-  client-fingerprint: firefox
-  alpn:
-  - http%2F1.1
-  ws-opts:
-    path: /danfeng?ed=2560
-    headers:
-      Host: xy1ej.stream-node-us.danfeng.qzz.io
-  country: SG
-- name: 🇪🇬 Египет
-  type: ss
-  server: 38.54.59.102
-  port: 443
-  udp: true
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-  country: EG
-- name: 🇹🇷 Турция 06
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.apple.com
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  client-fingerprint: firefox
-  country: TR
-- name: 🇸🇪 Швеция 08
-  type: vless
-  server: se3.shtil.io
-  port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  udp: true
-  tls: true
-  network: tcp
-  servername: se3.shtil.io
-  client-fingerprint: firefox
-  country: SE
-- name: 🇹🇷 Турция 07
-  type: vless
-  server: 153.56.210.61
-  port: 443
-  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
-  udp: true
-  tls: true
-  network: tcp
-  servername: amd.com
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  country: TR
-- name: 🇧🇬 Болгария 02
-  type: vless
-  server: areal1.greewebservices.ir
-  port: 2425
-  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
-  udp: true
-  tls: true
-  network: tcp
-  servername: play.googleapis.com
-  reality-opts:
-    public-key: MnPGY1Vo4ZbYdpLRTYHoolv5s_pwO41karyJfnQ0F3o
-    short-id: 9b60d3
-  client-fingerprint: ios
-  country: BG
-- name: 🇧🇬 Болгария 03
-  type: vless
-  server: p2real33.greewebservices.ir
-  port: 1330
-  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
-  udp: true
-  tls: true
-  network: tcp
-  servername: play.googleapis.com
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: 9b60d3
-  client-fingerprint: ios
-  country: BG
-- name: 🇫🇮 Финляндия 09
-  type: vless
-  server: 31.77.199.147
-  port: 4443
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  udp: true
-  tls: true
-  network: tcp
-  servername: images.unsplash.com
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  country: FI
-- name: 🇧🇬 Болгария 04
-  type: vless
-  server: areal3.greewebservices.ir
-  port: 4445
-  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
-  udp: true
-  tls: true
-  network: tcp
-  servername: amp-api-edge.apps.apple.com
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: e3085d4fc679ba12
-  client-fingerprint: edge
-  country: BG
-- name: 🇱🇻 Латвия
-  type: vless
-  server: 138.124.180.137
-  port: 443
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.apple.com
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
+    public-key: 2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8
+    short-id: 2e82d7ac
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-  country: LV
-- name: 🇨🇦 Канада 05
-  type: vless
-  server: 104.20.61.103
-  port: 2083
-  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
-  udp: true
-  tls: true
-  network: ws
-  servername: site.check-looks.space
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: site.check-looks.space
-  country: CA
-- name: 🇧🇬 Болгария 05
-  type: vless
-  server: areal2.greewebservices.ir
-  port: 3435
-  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
-  udp: true
-  tls: true
-  network: tcp
-  servername: play.googleapis.com
-  reality-opts:
-    public-key: MnPGY1Vo4ZbYdpLRTYHoolv5s_pwO41karyJfnQ0F3o
-    short-id: e3085d4fc679ba12
-  client-fingerprint: ios
-  country: BG
-- name: 🇨🇦 Канада 06
-  type: trojan
-  server: 216.152.147.79
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: blog.connectingpeoplewithgreatjobs.com
-  client-fingerprint: firefox
-  network: tcp
-  country: CA
-- name: 🇰🇷 Южная Корея 11
-  type: vless
-  server: 3.39.4.109
-  port: 18967
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.apple.com
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  country: KR
-- name: 🇰🇷 Южная Корея 12
-  type: vless
-  server: 43.128.130.45
-  port: 443
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  udp: true
-  tls: true
-  servername: xy1ej.stream-node-us.danfeng.qzz.io
-  alpn:
-  - http/1.1
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /danfeng?ed=2560
-    headers:
-      Host: xy1ej.stream-node-us.danfeng.qzz.io
-  country: KR
+  country: EE
 - name: 🇸🇬 Сингапур 14
-  type: vless
-  server: 5.34.177.164
-  port: 443
-  uuid: ca678d26-5435-4d13-b378-06c4c3b070ff
-  udp: true
-  tls: true
-  network: tcp
-  servername: gateway.icloud.com
-  reality-opts:
-    public-key: cwWhNuekusD1iPZZ--7G891dU9PCacxyCYwsZxOApHA
-    short-id: b2efed6d157e7bb0
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  country: SG
-- name: 🇰🇷 Южная Корея 13
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.apple.com
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  country: KR
-- name: 🇧🇷 Бразилия 01
-  type: trojan
-  server: 216.238.104.154
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
-  client-fingerprint: firefox
-  network: tcp
-  country: BR
-- name: 🇸🇬 Сингапур 15
-  type: vless
-  server: 172.237.88.103
-  port: 443
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
-  udp: true
-  tls: true
-  network: tcp
-  servername: zoom.us
-  reality-opts:
-    public-key: EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI
-    short-id: 5a42dbd7e26a0415
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-  country: SG
-- name: 🇧🇷 Бразилия 02
-  type: trojan
-  server: 216.238.104.154
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: 216.238.104.154
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: tcp
-  country: BR
-- name: 🇬🇧 Великобритания 13
-  type: vless
-  server: 83.147.18.75
-  port: 443
-  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.bing.com
-  reality-opts:
-    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
-    short-id: 7f1e29593aa94ad1
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-  country: GB
-- name: 🇨🇦 Канада 07
-  type: vless
-  server: 104.18.151.231
-  port: 443
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  udp: true
-  tls: true
-  network: ws
-  servername: hidden-star-98c5.tebohi79684008.workers.dev
-  client-fingerprint: firefox
-  ws-opts:
-    path: /ws
-    headers:
-      Host: hidden-star-98c5.tebohi79684008.workers.dev
-  country: CA
-- name: 🇰🇷 Южная Корея 14
-  type: vless
-  server: 8.220.241.33
-  port: 443
-  uuid: f877d913-9f87-45dd-bfe8-d95043081184
-  udp: true
-  tls: true
-  network: tcp
-  servername: cloudflare.com
-  reality-opts:
-    public-key: jSvhKKNVMhMQOCERpOyPwfNkzMnHQExIua0oWRdbuB8
-  client-fingerprint: firefox
-  country: KR
-- name: 🇰🇷 Южная Корея 15
-  type: trojan
-  server: 154.90.62.70
-  port: 56127
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
-  udp: true
-  sni: 154.90.62.70
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: tcp
-  country: KR
-- name: 🇵🇭 Филиппины
   type: ss
-  server: 149.104.109.252
-  port: 8882
-  udp: true
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  country: PH
-- name: 🇹🇭 Таиланд
-  type: vless
-  server: 45.154.26.63
-  port: 443
-  uuid: ff85e702-b605-4109-884d-2c1f065d0954
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk
-    short-id: 3c032a7e
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  country: TH
-- name: 🇬🇧 Великобритания 14
-  type: vless
-  server: 46.250.240.80
-  port: 2053
-  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
-    short-id: 4cc9dc65f7770115
-  client-fingerprint: firefox
-  country: GB
-- name: 🇮🇹 Италия 04
-  type: ss
-  server: 202.50.253.90
+  server: 15.235.182.183
   port: 19999
   udp: true
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  country: IT
-- name: 🇿🇦 ЮАР 01
+  country: SG
+- name: 🇹🇷 Турция 06
   type: hysteria2
-  server: 102.208.216.88
-  port: 8443
-  password: 1793747701:04cbffa7-bd2c-4a51-bf32-2253f4fbc1ab:cv_QNzenE8BtqjxU5H4mzZ7ki0M4jLW2DCs01wdD78Y
-  sni: za2.lumacache.com
+  server: me17.msjia8844.site
+  port: 7443
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
   client-fingerprint: firefox
-  country: ZA
-- name: 🇨🇦 Канада 08
+  country: TR
+- name: 🇷🇴 Румыния 05
   type: vless
-  server: 104.21.91.49
+  server: 46.28.67.55
   port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  tls: true
-  network: ws
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-  country: CA
-- name: 🇧🇾 Беларусь 05
-  type: vless
-  server: 95.128.71.79
-  port: 10444
-  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
   udp: true
   tls: true
   network: tcp
-  servername: ads.x5.ru
+  servername: www.cloudflare.com
   reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-  country: BY
-- name: 🇨🇭 Швейцария 03
-  type: trojan
-  server: 208.69.78.60
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: cdn.yourultimateprofessionalcareerhub.com
-  client-fingerprint: chrome
-  network: tcp
-  country: CH
-- name: 🇮🇳 Индия 01
+  country: RO
+- name: 🇬🇷 Греция
   type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  server: 85.90.197.220
+  port: 443
+  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
   udp: true
   tls: true
   network: tcp
-  servername: www.apple.com
+  servername: www.cloudflare.com
   reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  client-fingerprint: firefox
-  country: IN
-- name: 🇷🇺 Россия 02
-  type: hysteria2
-  server: 84.38.184.87
-  port: 36118
-  password: 1793747701:04cbffa7-bd2c-4a51-bf32-2253f4fbc1ab:EKksNGKEBp8PXC1msSPh-Nfurs0VeCN0xPSnf1UsVH8
-  udp: true
-  sni: us2.lumacache.com
-  alpn:
-  - h3
-  country: RU
-  client-fingerprint: firefox
-- name: 🇸🇪 Швеция 09
-  type: vless
-  server: 201.58.187.248
-  port: 443
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  udp: true
-  tls: true
-  network: tcp
-  servername: swidenafterlanzerotte.space
-  reality-opts:
-    public-key: MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM
-  client-fingerprint: firefox
+    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
+    short-id: 94acb54627612d43
+  client-fingerprint: safari
   flow: xtls-rprx-vision
-  country: SE
-- name: 🇦🇪 ОАЭ
-  type: vless
-  server: 46.8.125.64
-  port: 443
-  uuid: dc413f44-7dce-4cc4-b2c7-878ef70ce464
+  country: GR
+- name: 🇭🇰 Гонконг 15
+  type: ss
+  server: 58.152.58.193
+  port: 40006
   udp: true
-  tls: true
-  network: tcp
-  servername: dubai-cdn-keno.keno.su
-  reality-opts:
-    public-key: 9MgNwdrftjPf18DG8qYo6iHJw7IG7uSnULScDQ0WDy4
-    short-id: 0123456789abcdef
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: AE
-- name: 🇮🇹 Италия 05
+  cipher: chacha20-ietf-poly1305
+  password: 28789988-887e-4e41-83cd-27bbfb7999ad
+  country: HK
+- name: 🇮🇹 Италия 10
   type: vless
   server: 91.201.67.245
   port: 443
@@ -2832,370 +2820,67 @@ proxies:
   client-fingerprint: firefox
   flow: xtls-rprx-vision
   country: IT
-- name: 🇷🇺 Россия 03
-  type: vless
-  server: 201.34.142.108
-  port: 443
-  uuid: c04522c4-3d53-4eab-b5b5-25385d5f11b1
-  udp: true
-  tls: true
-  network: xhttp
-  servername: 201.34.142.108
-  client-fingerprint: safari
-  alpn:
-  - h2
-  - http/1.1
-  xhttp-opts:
-    path: /assets/nlrelay01/
-    mode: packet-up
-  country: RU
-- name: 🇫🇮 Финляндия 10
-  type: vless
-  server: 177.3.193.191
-  port: 443
-  uuid: 5fb552a8-9c41-4031-86f5-ca10fc802da5
-  udp: true
-  tls: true
-  network: tcp
-  servername: debik2.vethilis.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: FI
-- name: 🇷🇺 Россия 04
-  type: vless
-  server: 193.163.203.170
-  port: 443
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-  udp: true
-  tls: true
-  network: tcp
-  servername: yandex.ru
-  reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  country: RU
-- name: 🇮🇹 Италия 06
-  type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.apple.com
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-    short-id: 5b8a942318178e7b
-  client-fingerprint: firefox
-  country: IT
 - name: 🇷🇺 Россия 05
-  type: hysteria2
-  server: 84.38.184.87
-  port: 36116
-  password: 1793747701:04cbffa7-bd2c-4a51-bf32-2253f4fbc1ab:98Va5kVHKW06htuFKRbjrX7rWPTNQI4Jlee5xTFNAW0
-  udp: true
-  sni: hu.lumacache.com
-  alpn:
-  - h3
-  country: RU
-  client-fingerprint: firefox
-- name: 🇷🇺 Россия 06
   type: vless
-  server: 109.71.247.200
+  server: 185.178.208.140
   port: 443
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+  udp: true
+  tls: true
+  servername: static.bakarova-top.ru
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /api/v2/events
+  country: RU
+- name: 🇧🇾 Беларусь 06
+  type: vless
+  server: 178.172.227.124
+  port: 10444
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
   udp: true
   tls: true
   network: tcp
-  servername: static-47.topp-con.xyz
+  servername: ads.x5.ru
   reality-opts:
-    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
-    short-id: b9120cd53ffd7bba
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: RU
-- name: 🇪🇪 Эстония 03
-  type: vless
-  server: 185.225.205.53
-  port: 443
-  uuid: 3d526c7f-059c-4e2b-b09a-8569b268935b
-  udp: true
-  tls: true
-  network: tcp
-  servername: addons.mozilla.org
-  reality-opts:
-    public-key: 2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8
-    short-id: 2e82d7ac
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-  country: EE
-- name: 🇿🇦 ЮАР 02
+  country: BY
+- name: 🇸🇬 Сингапур 15
   type: ss
-  server: 102.37.156.224
-  port: 443
-  udp: true
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-  country: ZA
-- name: 🇷🇺 Россия 07
-  type: vless
-  server: 147.45.245.17
-  port: 443
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  udp: true
-  tls: true
-  network: tcp
-  servername: defs-64.topp-con.xyz
-  reality-opts:
-    public-key: 4GpOXPkTdvuF1mgBH6n9AFYRvGEh7K2ETgE8asmNASY
-    short-id: 38146bd64aece7a5
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: RU
-- name: 🇿🇦 ЮАР 03
-  type: ss
-  server: 102.133.165.160
-  port: 16233
-  udp: true
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  country: ZA
-- name: 🇨🇦 Канада 09
-  type: trojan
-  server: 104.25.239.113
-  port: 2053
-  password: gHQP0D7D15
-  udp: true
-  sni: marvdasht.phonecomparisonblog.org
-  skip-cert-verify: true
-  network: ws
-  client-fingerprint: firefox
-  ws-opts:
-    path: /
-    headers:
-      Host: marvdasht.phonecomparisonblog.org
-  country: CA
-- name: 🇸🇪 Швеция 10
-  type: vless
-  server: sw.golangwikito.cfd
-  port: 443
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: sw.golangwikito.cfd
-  client-fingerprint: edge
-  reality-opts:
-    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
-    short-id: a1037b25dcef6aa7
-  network: tcp
-  country: SE
-- name: 🇨🇭 Швейцария 04
-  type: trojan
-  server: 208.69.78.29
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: learn.yourultimateprofessionalcareerhub.com
-  client-fingerprint: firefox
-  network: tcp
-  country: CH
-- name: 🇷🇺 Россия 08
-  type: vless
-  server: 83.222.13.131
-  port: 443
-  uuid: 05e7c58f-4d16-4821-ba50-5cedbc735e16
-  udp: true
-  tls: true
-  network: tcp
-  servername: amedia-vod.cdnvideo.ru
-  reality-opts:
-    public-key: pbO31C8T53OfUhnw152DBaQ0qRPPcStHth61s5OYdV4
-    short-id: aabbccdd
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-  country: RU
-- name: 🇮🇳 Индия 02
-  type: vless
-  server: 178.212.35.198
-  port: 443
-  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
-    short-id: 6bdc8320
-  client-fingerprint: firefox
-  country: IN
-- name: 🇨🇦 Канада 10
-  type: trojan
-  server: 172.67.118.45
-  port: 2053
-  password: gHQP0D7D15
-  udp: true
-  sni: marvdasht.phonecomparisonblog.org
-  skip-cert-verify: true
-  network: ws
-  client-fingerprint: firefox
-  ws-opts:
-    path: /
-    headers:
-      Host: marvdasht.phonecomparisonblog.org
-  country: CA
-- name: 🇨🇦 Канада 11
-  type: trojan
-  server: 104.18.0.1
-  port: 2053
-  password: gHQP0D7D15
-  udp: true
-  sni: marvdasht.phonecomparisonblog.org
-  network: ws
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: marvdasht.phonecomparisonblog.org
-  country: CA
-- name: 🇨🇦 Канада 12
-  type: trojan
-  server: 172.66.0.1
-  port: 2053
-  password: gHQP0D7D15
-  udp: true
-  sni: marvdasht.phonecomparisonblog.org
-  network: ws
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: marvdasht.phonecomparisonblog.org
-  country: CA
-- name: 🇶🇦 Катар
-  type: vless
-  server: 149.104.121.174
-  port: 8443
-  uuid: 1506f2e0-ae12-4718-b5ab-c5609161300e
-  udp: true
-  tls: true
-  network: tcp
-  servername: as10.cdn77.icu
-  reality-opts:
-    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-  client-fingerprint: chrome
-  country: QA
-- name: 🇨🇴 Колумбия
-  type: ss
-  server: 149.104.107.41
-  port: 8090
+  server: 51.79.228.131
+  port: 19999
   udp: true
   cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-  country: CO
-- name: 🇪🇸 Испания 05
-  type: trojan
-  server: 66.163.118.166
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: learn.discovergreatjobsandadvanceyourcareer.com
-  client-fingerprint: firefox
-  network: tcp
-  country: ES
-- name: 🇷🇺 Россия 09
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  country: SG
+- name: 🇷🇺 Россия 06
   type: vless
-  server: 84.23.52.120
-  port: 28450
-  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  server: 185.178.208.140
+  port: 443
+  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
   udp: true
   tls: true
-  network: ws
-  servername: pl.sparxiecn.com
-  client-fingerprint: safari
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /lovelive
-    headers:
-      Host: pl.sparxiecn.com
+  servername: api.bakarova-top.ru
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /api/v2/events
   country: RU
-- name: 🇨🇭 Швейцария 05
-  type: trojan
-  server: 208.69.78.222
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: yourultimateprofessionalcareerhub.com
-  client-fingerprint: chrome
-  network: tcp
-  country: CH
-- name: 🇦🇱 Албания 02
-  type: vless
-  server: alb-4vp.fast-cdn24.com
-  port: 443
-  uuid: 4460652a-ac34-454d-a119-afe8f4dde1a0
-  udp: true
-  tls: true
-  network: tcp
-  servername: alb-4vp.fast-cdn24.com
-  reality-opts:
-    public-key: gTUnUbw-NeqnTyW5FfixJU4uVQLbSKs3chpphO1aMHY
-    short-id: c4f2e1cc1a56fc13
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  country: AL
-- name: 🇮🇳 Индия 03
-  type: vless
-  server: 122.176.216.52
-  port: 443
-  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-  udp: true
-  tls: true
-  network: ws
-  servername: app-6ada5023.deploy.meerasolution.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  ws-opts:
-    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-    headers:
-      Host: app-6ada5023.deploy.meerasolution.com
-  country: IN
-- name: 🇪🇸 Испания 06
+- name: 🇪🇸 Испания 14
   type: trojan
   server: 66.163.118.62
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: courses.discovergreatjobsandadvanceyourcareer.com
+  sni: 66.163.118.62
   skip-cert-verify: true
   client-fingerprint: chrome
   network: tcp
   country: ES
-- name: 🇷🇺 Россия 10
-  type: vless
-  server: 5.129.202.80
-  port: 443
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  udp: true
-  tls: true
-  network: tcp
-  servername: mirror-50.topp-con.xyz
-  reality-opts:
-    public-key: NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8
-    short-id: 2ef2b10d5143d798
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
-  country: RU
-- name: 🇮🇳 Индия 04
+- name: 🇮🇳 Индия 02
   type: vless
   server: hydra.yokkastars.com
   port: 2443
@@ -3211,162 +2896,319 @@ proxies:
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763
   country: IN
-- name: 🇮🇳 Индия 05
+- name: 🇰🇷 Южная Корея 09
   type: vless
-  server: in.smrtai.top
+  server: 3.39.4.109
+  port: 18967
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  network: tcp
+  servername: www.apple.com
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  country: KR
+- name: 🇧🇾 Беларусь 07
+  type: vless
+  server: 95.128.71.79
+  port: 10444
+  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
+  udp: true
+  tls: true
+  network: tcp
+  servername: ads.x5.ru
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  country: BY
+- name: 🇹🇷 Турция 07
+  type: vless
+  server: 153.56.210.61
   port: 443
-  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
+  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
+  udp: true
+  tls: true
+  network: tcp
+  servername: amd.com
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  country: TR
+- name: 🇷🇺 Россия 07
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+  udp: true
+  tls: true
+  servername: api.bakarova-top.ru
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /api/v2/events
+    host: api.bakarova-top.ru
+    mode: packet-up
+  country: RU
+- name: 🇷🇺 Россия 08
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+  udp: true
+  tls: true
+  servername: static.bakarova-top.ru
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /api/v2/events
+    mode: packet-up
+  country: RU
+- name: 🇧🇷 Бразилия 01
+  type: trojan
+  server: 216.238.104.154
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: 216.238.104.154
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: tcp
+  country: BR
+- name: 🇲🇾 Малайзия 01
+  type: ss
+  server: 130.94.69.15
+  port: 7001
+  udp: true
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  country: MY
+- name: 🇮🇹 Италия 11
+  type: vless
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  udp: true
+  tls: true
+  network: tcp
+  servername: www.apple.com
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+    short-id: 5b8a942318178e7b
+  client-fingerprint: firefox
+  country: IT
+- name: 🇹🇷 Турция 08
+  type: ss
+  server: 204.10.192.22
+  port: 3043
+  udp: true
+  cipher: aes-256-gcm
+  password: c5PtLhylY5r3jJQ6XlzGiOdXeYYlhu-k
+  country: TR
+- name: 🇧🇬 Болгария 02
+  type: vless
+  server: p2real33.greewebservices.ir
+  port: 1330
+  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
+  udp: true
+  tls: true
+  network: tcp
+  servername: play.googleapis.com
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: 9b60d3
+  client-fingerprint: ios
+  country: BG
+- name: 🇺🇦 Украина
+  type: vless
+  server: netx.smrtai.top
+  port: 443
+  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
   udp: true
   tls: true
   network: tcp
   servername: www.cloudflare.com
   reality-opts:
-    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
-    short-id: 6bdc8320
+    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
+    short-id: d8b58872
   client-fingerprint: chrome
-  country: IN
-- name: 🇮🇹 Италия 07
-  type: ss
-  server: 202.50.253.81
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  country: IT
-- name: 🇰🇿 Казахстан
-  type: vless
-  server: 109.248.170.119
-  port: 13447
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
-  udp: true
-  tls: true
-  network: tcp
-  servername: yahoo.com
-  reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-    short-id: '83'
-  client-fingerprint: chrome
-  country: KZ
-- name: 🇮🇳 Индия 06
+  country: UA
+- name: 🇧🇷 Бразилия 02
   type: trojan
-  server: in002.zestapp778.com
-  port: 42733
-  password: 5t6i121em5lkmsmk
-  udp: true
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  network: tcp
-  country: IN
-- name: 🇸🇪 Швеция 11
-  type: vless
-  server: swidenafterlanzerotte.space
-  port: 443
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  udp: true
-  tls: true
-  network: tcp
-  servername: swidenafterlanzerotte.space
-  reality-opts:
-    public-key: MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-  country: SE
-- name: 🇷🇺 Россия 11
-  type: trojan
-  server: de-bots4.h1cloud.net
-  port: 25267
-  password: happybirthdaydaniel
-  udp: true
-  sni: de-bots4.h1cloud.net
-  skip-cert-verify: true
-  client-fingerprint: safari
-  network: tcp
-  country: RU
-- name: 🇪🇸 Испания 07
-  type: trojan
-  server: 66.163.118.131
+  server: 216.238.104.154
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: www.discovergreatjobsandadvanceyourcareer.com
+  sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
   client-fingerprint: firefox
   network: tcp
-  country: ES
-- name: 🇷🇺 Россия 12
-  type: trojan
-  server: de-bots4.h1cloud.net
-  port: 25267
-  password: happybirthdaydaniel
+  country: BR
+- name: 🇧🇬 Болгария 03
+  type: vless
+  server: areal2.greewebservices.ir
+  port: 3435
+  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
   udp: true
-  sni: t.me%2ffuckthewall
-  skip-cert-verify: true
-  client-fingerprint: chrome
+  tls: true
   network: tcp
-  country: RU
-- name: 🇹🇼 Тайвань 10
-  type: vless
-  server: 60.248.219.53
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  network: ws
-  servername: ty986gfazs.cainiaohub.xyz
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-  country: TW
-- name: 🇹🇼 Тайвань 11
-  type: vless
-  server: 60.248.219.78
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  network: ws
-  servername: ty986gfazs.cainiaohub.xyz
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-  country: TW
-- name: 🇮🇹 Италия 08
-  type: ss
-  server: 202.50.253.72
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  country: IT
-- name: 🇹🇼 Тайвань 12
-  type: vless
-  server: 59.125.69.23
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  network: ws
-  servername: ty986gfazs.cainiaohub.xyz
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-  country: TW
-- name: 🇷🇺 Россия 13
-  type: trojan
-  server: de-bots4.h1cloud.net
-  port: 25267
-  password: happybirthdaydaniel
-  udp: true
-  sni: t.me/FuckTheWall
-  skip-cert-verify: true
+  servername: play.googleapis.com
+  reality-opts:
+    public-key: MnPGY1Vo4ZbYdpLRTYHoolv5s_pwO41karyJfnQ0F3o
+    short-id: e3085d4fc679ba12
   client-fingerprint: ios
+  country: BG
+- name: 🇧🇬 Болгария 04
+  type: vless
+  server: 6.bmi.ir.asopardaz.ir
+  port: 8443
+  uuid: 67a4b4b1-6eed-4dbb-9984-3f86e7efa831
+  udp: true
+  tls: true
   network: tcp
-  country: RU
+  servername: hostgator.com
+  reality-opts:
+    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
+    short-id: e915
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  country: BG
+- name: 🇰🇷 Южная Корея 10
+  type: vless
+  server: 3.39.4.109
+  port: 13672
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  tls: true
+  network: tcp
+  servername: www.apple.com
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  country: KR
+- name: 🇧🇬 Болгария 05
+  type: vless
+  server: areal3.greewebservices.ir
+  port: 4445
+  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
+  udp: true
+  tls: true
+  network: tcp
+  servername: amp-api-edge.apps.apple.com
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: e3085d4fc679ba12
+  client-fingerprint: edge
+  country: BG
+- name: 🇧🇬 Болгария 06
+  type: vless
+  server: 6.bmi.ir.asopardaz.ir
+  port: 8443
+  uuid: 67a4b4b1-6eed-4dbb-9984-3f86e7efa831
+  udp: true
+  tls: true
+  network: tcp
+  servername: timeline.www.cloudflare.com
+  reality-opts:
+    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
+    short-id: e915
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  country: BG
+- name: 🇰🇷 Южная Корея 11
+  type: vless
+  server: 8.220.241.33
+  port: 443
+  uuid: f877d913-9f87-45dd-bfe8-d95043081184
+  udp: true
+  tls: true
+  network: tcp
+  servername: cloudflare.com
+  reality-opts:
+    public-key: jSvhKKNVMhMQOCERpOyPwfNkzMnHQExIua0oWRdbuB8
+  client-fingerprint: firefox
+  country: KR
+- name: 🇲🇾 Малайзия 02
+  type: trojan
+  server: 47.250.84.25
+  port: 443
+  password: 5931134d1cde66bf83a54acdfebe7ab2
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: tcp
+  country: MY
+- name: 🇲🇾 Малайзия 03
+  type: trojan
+  server: 47.250.84.25
+  port: 443
+  password: 5931134d1cde66bf83a54acdfebe7ab2
+  udp: true
+  sni: 47.250.84.25
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: tcp
+  country: MY
+- name: 🇰🇷 Южная Корея 12
+  type: trojan
+  server: kr002.zestapp778.com
+  port: 48851
+  password: 5t6i121em5lkmsmk
+  udp: true
+  sni: kr002.zestapp778.com
+  client-fingerprint: firefox
+  network: tcp
+  country: KR
+- name: 🇧🇬 Болгария 07
+  type: vless
+  server: areal1.greewebservices.ir
+  port: 2425
+  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
+  udp: true
+  tls: true
+  network: tcp
+  servername: play.googleapis.com
+  reality-opts:
+    public-key: MnPGY1Vo4ZbYdpLRTYHoolv5s_pwO41karyJfnQ0F3o
+    short-id: 9b60d3
+  client-fingerprint: ios
+  country: BG
+- name: 🇰🇷 Южная Корея 13
+  type: trojan
+  server: 158.247.255.150
+  port: 48851
+  password: 5t6i121em5lkmsmk
+  udp: true
+  sni: kr002.zestapp778.com
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: tcp
+  country: KR
+- name: 🇦🇺 Австралия 01
+  type: trojan
+  server: 45.63.30.142
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: 45.63.30.142
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: tcp
+  country: AU
+- name: 🇦🇺 Австралия 02
+  type: trojan
+  server: 45.63.30.142
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: tcp
+  country: AU
