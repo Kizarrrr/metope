@@ -894,15 +894,11 @@ def format_final_proxy_names(nodes: list):
         else:
             n['name'] = f"{flag} {c}"
 
-def filter_by_quotas(nodes: list, settings: dict = None, is_candidate: bool = False) -> tuple:
+def filter_by_quotas(nodes: list, settings: dict = None) -> tuple:
     settings = settings or {}
     per_proto = int(settings.get('per_country_proto', 8))
     max_per_country = int(settings.get('max_per_country', 15))
     max_total = int(settings.get('max_total', 300))
-    if is_candidate:
-        per_proto = int(per_proto * 1.5)
-        max_per_country = int(max_per_country * 1.5)
-        max_total = int(max_total * 1.5)
 
     per_cp, per_c, best_nodes = {}, {}, []
     per_proto_dropped = 0
@@ -931,13 +927,13 @@ def filter_by_quotas(nodes: list, settings: dict = None, is_candidate: bool = Fa
     }
     return best_nodes, stats
 
-def assign_clean_country_names(working_nodes: list, settings: dict = None, is_candidate: bool = False) -> tuple:
+def assign_clean_country_names(working_nodes: list, settings: dict = None) -> tuple:
     settings = settings or {}
 
     if not working_nodes:
         return [], {'per_proto_dropped': 0, 'max_country_dropped': 0, 'max_total_dropped': 0}
 
-    print(f"[*] Этап 4: Определение геолокации и подготовка кандидатов:")
+    print(f"[*] Этап 5: Определение геолокации и финальный отбор узлов:")
     print(f"    - Поступило на гео-анализ: {len(working_nodes)}")
 
     ips_to_query = list({n.get('_ip') for n in working_nodes if n.get('_ip')})
@@ -970,18 +966,14 @@ def assign_clean_country_names(working_nodes: list, settings: dict = None, is_ca
         node['_cname'] = cname
         node['_flag'] = flag
 
-    working_nodes.sort(key=lambda x: x.get('_score_delay', x.get('_delay', 9999)))
+    working_nodes.sort(key=lambda x: (-x.get('_speed', 0), x.get('_score_delay', x.get('_delay', 9999))))
 
-    best_nodes, geo_stats = filter_by_quotas(working_nodes, settings, is_candidate=is_candidate)
+    best_nodes, geo_stats = filter_by_quotas(working_nodes, settings)
     format_final_proxy_names(best_nodes)
 
     per_proto = int(settings.get('per_country_proto', 8))
     max_per_country = int(settings.get('max_per_country', 15))
     max_total = int(settings.get('max_total', 300))
-    if is_candidate:
-        per_proto = int(per_proto * 1.5)
-        max_per_country = int(max_per_country * 1.5)
-        max_total = int(max_total * 1.5)
 
     print(f"    - Отсеяно дубликатов протокола в одной стране (лимит {per_proto}): {geo_stats['per_proto_dropped']}")
     print(f"    - Отсеяно по превышению лимита на страну (лимит {max_per_country}): {geo_stats['max_country_dropped']}")
@@ -1023,7 +1015,7 @@ def run_speed_test_finalists(finalists: list, settings: dict, mihomo_bin: str = 
     for idx, node in enumerate(finalists):
         worker_buckets[idx % num_workers].append(node)
 
-    print(f"[*] Этап 5: Параллельный спид-тест финалистов ({num_workers} воркеров, тест {target_bytes // 1024} КБ, отсев <{min_bytes // 1024} КБ за {timeout_sec} с):")
+    print(f"[*] Этап 4: Параллельный спид-тест всех живых узлов ({num_workers} воркеров, тест {target_bytes // 1024} КБ, отсев <{min_bytes // 1024} КБ за {timeout_sec} с):")
 
     passed = []
     print_lock = threading.Lock()
@@ -1600,20 +1592,12 @@ def run_health_checks(nodes: list, settings: dict) -> tuple:
 
     check_speed = bool(settings.get('check_speed', True))
     if check_speed and passed_ping_nodes:
-        candidates, cand_stats = assign_clean_country_names(passed_ping_nodes, settings, is_candidate=True)
-        speed_tested = run_speed_test_finalists(candidates, settings, mihomo_bin)
-        speed_dropped = len(candidates) - len(speed_tested)
-        final_nodes, final_geo_stats = filter_by_quotas(speed_tested, settings, is_candidate=False)
-        format_final_proxy_names(final_nodes)
-        geo_stats = {
-            'per_proto_dropped': cand_stats.get('per_proto_dropped', 0) + final_geo_stats.get('per_proto_dropped', 0),
-            'max_country_dropped': cand_stats.get('max_country_dropped', 0) + final_geo_stats.get('max_country_dropped', 0),
-            'max_total_dropped': cand_stats.get('max_total_dropped', 0) + final_geo_stats.get('max_total_dropped', 0),
-        }
+        speed_tested = run_speed_test_finalists(passed_ping_nodes, settings, mihomo_bin)
+        speed_dropped = len(passed_ping_nodes) - len(speed_tested)
+        final_nodes, geo_stats = assign_clean_country_names(speed_tested, settings)
     else:
-        candidates = passed_ping_nodes
         speed_dropped = 0
-        final_nodes, geo_stats = assign_clean_country_names(passed_ping_nodes, settings, is_candidate=False)
+        final_nodes, geo_stats = assign_clean_country_names(passed_ping_nodes, settings)
 
     total_dropped_in_checks = len(nodes) - len(final_nodes)
     print(f"[✅] Проверка завершена: отобрано {len(final_nodes)} рабочих серверов (всего отсеяно с начала проверки: {total_dropped_in_checks})")

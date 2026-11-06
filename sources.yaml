@@ -8,7 +8,7 @@ settings:
   strict_check: true
   speed_test_url: "https://speed.cloudflare.com/__down?bytes=300000"
   speed_test_timeout_sec: 8
-  speed_test_workers: 8
+  speed_test_workers: 16
   check_speed: true
   test_timeout_ms: 3500
   max_concurrent_checks: 80
