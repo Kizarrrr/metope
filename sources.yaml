@@ -11,7 +11,6 @@ settings:
   speed_test_workers: 8
   check_speed: true
   test_timeout_ms: 3500
-  max_delay_ms: 2000
   max_concurrent_checks: 80
   per_country_proto: 8
   max_per_country: 15

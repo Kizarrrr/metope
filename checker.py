@@ -721,7 +721,13 @@ def deduplicate_nodes(nodes: list) -> list:
     unique = []
     invalid_addrs = 0
     duplicates = 0
+    filtered_proto = 0
     for n in nodes:
+        ptype = str(n.get('type', '')).strip().lower()
+        if ptype in ('vmess', 'openvpn', 'ovpn'):
+            filtered_proto += 1
+            continue
+
         server = str(n.get('server', '')).strip().lower()
         try:
             port = int(n.get('port', 0))
@@ -752,6 +758,8 @@ def deduplicate_nodes(nodes: list) -> list:
     print(f"    - Поступило с источников: {len(nodes)}")
     if invalid_addrs > 0:
         print(f"    - Отсеяно некорректных адресов/портов: {invalid_addrs}")
+    if filtered_proto > 0:
+        print(f"    - Отсеяно нежелательных протоколов (OpenVPN/VMess): {filtered_proto}")
     print(f"    - Отсеяно прямых дубликатов серверов: {duplicates}")
     print(f"    - Оставлено уникальных серверов: {len(unique)}")
     return unique
@@ -929,7 +937,7 @@ def assign_clean_country_names(working_nodes: list, settings: dict = None, is_ca
     if not working_nodes:
         return [], {'per_proto_dropped': 0, 'max_country_dropped': 0, 'max_total_dropped': 0}
 
-    print(f"[*] Этап 5: Определение геолокации и подготовка кандидатов:")
+    print(f"[*] Этап 4: Определение геолокации и подготовка кандидатов:")
     print(f"    - Поступило на гео-анализ: {len(working_nodes)}")
 
     ips_to_query = list({n.get('_ip') for n in working_nodes if n.get('_ip')})
@@ -1015,7 +1023,7 @@ def run_speed_test_finalists(finalists: list, settings: dict, mihomo_bin: str = 
     for idx, node in enumerate(finalists):
         worker_buckets[idx % num_workers].append(node)
 
-    print(f"[*] Этап 6: Параллельный спид-тест финалистов ({num_workers} воркеров, тест {target_bytes // 1024} КБ, отсев <{min_bytes // 1024} КБ за {timeout_sec} с):")
+    print(f"[*] Этап 5: Параллельный спид-тест финалистов ({num_workers} воркеров, тест {target_bytes // 1024} КБ, отсев <{min_bytes // 1024} КБ за {timeout_sec} с):")
 
     passed = []
     print_lock = threading.Lock()
@@ -1194,7 +1202,7 @@ def run_health_checks(nodes: list, settings: dict) -> tuple:
     timeout_ms = settings.get('test_timeout_ms', 3000)
     concurrency = settings.get('max_concurrent_checks', 80)
 
-    valid_types = {'ss', 'vmess', 'vless', 'trojan', 'hysteria', 'hysteria2', 'tuic', 'wireguard', 'snell'}
+    valid_types = {'ss', 'vless', 'trojan', 'hysteria', 'hysteria2', 'tuic', 'wireguard', 'snell'}
 
     distinct_hosts = {
         str(n.get('server', '')).strip().strip('[]').rstrip('.')
@@ -1558,9 +1566,6 @@ def run_health_checks(nodes: list, settings: dict) -> tuple:
                         dead_cf += 1
 
         dead_count = len(valid_nodes) - len(alive_delays)
-        print(f"    - Протестировано через ядро: {len(valid_nodes)}")
-        print(f"    - Ответили на проверочные запросы: {len(alive_delays)}")
-        print(f"    - Отсеяно суммарно: {dead_count}")
         print(f"      * Базовый коннект (Google/Xiaomi): {dead_base}")
         if check_yt:
             print(f"      * Недоступен YouTube: {dead_yt}")
@@ -1569,26 +1574,15 @@ def run_health_checks(nodes: list, settings: dict) -> tuple:
         if strict:
             print(f"      * Недоступен Cloudflare: {dead_cf}")
 
-        max_delay = int(settings.get('max_delay_ms', 2000))
-
         passed_ping_nodes = []
-        high_ping_count = 0
         for node in valid_nodes:
             tid = node['_test_id']
             if tid in alive_delays:
                 delay, d_yt, d_tg = alive_delays[tid]
-                if delay <= max_delay:
-                    node['_delay'] = delay
-                    valid_delays = [d for d in (delay, d_yt, d_tg) if d and d > 0]
-                    node['_score_delay'] = round(sum(valid_delays) / len(valid_delays)) if valid_delays else delay
-                    passed_ping_nodes.append(node)
-                else:
-                    high_ping_count += 1
-
-        print(f"[*] Этап 4: Фильтрация по времени отклика (макс. пинг <= {max_delay} мс):")
-        print(f"    - Поступило живых узлов: {len(alive_delays)}")
-        print(f"    - Отсеяно по высокому пингу (>{max_delay} мс): {high_ping_count}")
-        print(f"    - Прошли порог пинга: {len(passed_ping_nodes)}")
+                node['_delay'] = delay
+                valid_delays = [d for d in (delay, d_yt, d_tg) if d and d > 0]
+                node['_score_delay'] = round(sum(valid_delays) / len(valid_delays)) if valid_delays else delay
+                passed_ping_nodes.append(node)
     finally:
         if proc:
             proc.terminate()
@@ -1763,7 +1757,6 @@ def main():
             f.write(f"#   - недоступен Telegram: {health_stats.get('dead_tg', 0)}\n")
         if health_stats.get('dead_cf', 0) > 0:
             f.write(f"#   - недоступен Cloudflare: {health_stats.get('dead_cf', 0)}\n")
-        f.write(f"# Прошли пинг-фильтр (<={settings.get('max_delay_ms', 2000)}ms): {health_stats['passed_ping_count']} | Отсеяно высокий пинг: {health_stats['high_ping_count']}\n")
         speed_sec = health_stats.get('speed_timeout_sec', 8)
         if health_stats.get('speed_dropped', 0) > 0:
             f.write(f"# Отсеяно по низкой скорости (<100 КБ за {speed_sec} с): {health_stats['speed_dropped']}\n")
@@ -1792,10 +1785,11 @@ def main():
         print(f"     * недоступен Telegram:              -{health_stats.get('dead_tg', 0)}")
     if health_stats.get('dead_cf', 0) > 0:
         print(f"     * недоступен Cloudflare:            -{health_stats.get('dead_cf', 0)}")
-    print(f"  5. Отсеяно с высоким пингом (>{settings.get('max_delay_ms', 2000)} мс): -{health_stats['high_ping_count']} -> прошло {health_stats['passed_ping_count']}")
+    step_num = 5
     if health_stats.get('speed_dropped', 0) > 0:
-        print(f"     Отсеяно по низкой скорости:         -{health_stats['speed_dropped']}")
-    print(f"  6. Отсеяно дублей протокола в стране:  -{health_stats['per_proto_dropped']}")
+        print(f"  {step_num}. Отсеяно по низкой скорости:         -{health_stats['speed_dropped']}")
+        step_num += 1
+    print(f"  {step_num}. Отсеяно дублей протокола в стране:  -{health_stats['per_proto_dropped']}")
     if health_stats['max_country_dropped'] > 0:
         print(f"     Отсеяно по лимиту на страну:        -{health_stats['max_country_dropped']}")
     if health_stats['max_total_dropped'] > 0:
